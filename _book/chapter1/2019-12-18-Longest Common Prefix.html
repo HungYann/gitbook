@@ -1,0 +1,497 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>14.Longest Common Prefix · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="2019-12-23-Leetcode练习题21. Merge Two Sorted Lists.md" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="2019-12-14-Two Sum.html">
+            
+                <a href="2019-12-14-Two Sum.html">
+            
+                    
+                    1.Two Sum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="2019-12-14-Reverse Integer.html">
+            
+                <a href="2019-12-14-Reverse Integer.html">
+            
+                    
+                    7.Reverse Integer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="2019-12-16-Palindrome Number.html">
+            
+                <a href="2019-12-16-Palindrome Number.html">
+            
+                    
+                    9.Palindrome Number
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" >
+            
+                <span>
+            
+                    
+                    13.Roman to Integer
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.5" data-path="2019-12-18-Longest Common Prefix.html">
+            
+                <a href="2019-12-18-Longest Common Prefix.html">
+            
+                    
+                    14.Longest Common Prefix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="2019-12-23-Leetcode练习题21. Merge Two Sorted Lists.md">
+            
+                <span>
+            
+                    
+                    21.Merge Two Sorted Lists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" >
+            
+                <span>
+            
+                    
+                    26.Remove Duplicates from Sorted Array
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.8" data-path="2019-12-15-Remove Element.html">
+            
+                <a href="2019-12-15-Remove Element.html">
+            
+                    
+                    27.Remove Element
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9" data-path="2020-1-1-Implement strStr.html">
+            
+                <a href="2020-1-1-Implement strStr.html">
+            
+                    
+                    28.Implement strStr()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.10" data-path="2019-12-19-Search Insert Position.html">
+            
+                <a href="2019-12-19-Search Insert Position.html">
+            
+                    
+                    35.Search Insert Position
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.11" data-path="2019-12-20-Length of Last Word.html">
+            
+                <a href="2019-12-20-Length of Last Word.html">
+            
+                    
+                    58.Length of Last Word
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.12" data-path="2019-12-28-Delete Node in a Linked List.html">
+            
+                <a href="2019-12-28-Delete Node in a Linked List.html">
+            
+                    
+                    237.Delete Node in a Linked List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.13" >
+            
+                <span>
+            
+                    
+                    704. Binary Search
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >14.Longest Common Prefix</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p><strong>Question:</strong></p>
+<p>Longest Common Prefix</p>
+<p>Write a function to find the longest common prefix string amongst an array of strings.</p>
+<p>If there is no common prefix, return an empty string &quot;&quot;.</p>
+<p><strong>Example 1:</strong></p>
+<pre><code class="lang-{}">Input: [&quot;flower&quot;,&quot;flow&quot;,&quot;flight&quot;]
+Output: &quot;fl&quot;
+</code></pre>
+<p><strong>Example 2:</strong></p>
+<pre><code class="lang-{}">Input: [&quot;dog&quot;,&quot;racecar&quot;,&quot;car&quot;]
+Output: &quot;&quot;
+</code></pre>
+<p>Explanation: There is no common prefix among the input strings.
+Note:</p>
+<p>All given inputs are in lowercase letters <strong>a-z</strong>.</p>
+<p>&#x6211;&#x7684;&#x89E3;&#x6CD5;&#x601D;&#x8DEF;&#x662F;&#xFF1A;</p>
+<p>&#x9996;&#x5148;&#x6BD4;&#x8F83;&#x7B2C;&#x4E00;&#x4E2A;&#x548C;&#x7B2C;&#x4E8C;&#x4E2A;&#x5B57;&#x7B26;&#x7684;&#x7B2C;i&#x5B57;&#x6BCD;&#xFF0C;&#x5982;&#x679C;&#x7B2C;&#x4E00;&#x4E2A;&#x548C;&#x7B2C;&#x4E8C;&#x4E2A;&#x5B57;&#x7B26;&#x7684;&#x7B2C;i&#x4E2A;&#x5B57;&#x6BCD;&#x76F8;&#x540C;&#xFF0C;&#x5219;&#x6BD4;&#x8F83;&#x7B2C;&#x4E8C;&#x4E2A;&#x548C;&#x7B2C;&#x4E09;&#x4E2A;&#x7684;&#x7B2C;i&#x4E2A;&#x5B57;&#x6BCD;&#xFF0C;&#x5982;&#x679C;&#x90FD;&#x76F8;&#x7B49;&#xFF0C;&#x5219;&#x5C06;&#x7B2C;i&#x4E2A;&#x5B57;&#x6BCD;&#x52A0;&#x5165;&#x6700;&#x540E;&#x7684;str&#x4E2D;&#xFF0C;i&#x7684;&#x5927;&#x5C0F;&#x4ECE;0&#x5F00;&#x59CB;&#xFF0C;&#x76F4;&#x5230;&#x5FAA;&#x73AF;&#x6700;&#x540E;&#x3002;</p>
+<p>&#x5B58;&#x5728;&#x7684;&#x95EE;&#x9898;&#x662F;&#xFF1A;</p>
+<pre><code class="lang-{java}">class Solution {
+    public String longestCommonPrefix(String[] strs) {
+
+        int Strslength = strs.length;
+
+
+        if(Strslength&gt;1)
+        {
+
+            int minLength = strs[0].length();
+            //O(n)
+            for(String str:strs)
+            {
+                int strLength = str.length();
+                if(minLength &gt; strLength)
+                {
+                    minLength = strLength;
+                }
+            }
+
+            //Store output ;
+            String str = &quot;&quot;;
+
+
+           label:for(int i=0;i&lt;minLength;i++)
+            {
+
+                for(int j=1;j&lt;strs.length;j++)
+                {
+
+                    if((strs[j-1].charAt(i))!=(strs[j].charAt(i)))
+                    {
+
+                            break label;
+
+                    }
+
+                }
+
+            str+= strs[0].charAt(i);
+            }
+            return str;
+
+        }
+        else if(Strslength==1)
+        {
+            return strs[0];
+        }
+        else
+        {
+            return &quot;&quot;;
+        }
+
+
+
+
+    }
+}
+</code></pre>
+<p><img src="https://tva1.sinaimg.cn/large/006tNbRwgy1ga11mrbnq7j30x20leq63.jpg" alt=""></p>
+<p>&#x5176;&#x4ED6;&#x4EBA;&#x7684;&#x89E3;&#x6CD5;&#xFF1A;</p>
+<p><img src="https://tva1.sinaimg.cn/large/006tNbRwgy1ga15dg0wcmj308e0imabq.jpg" alt=""></p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x89E3;&#x6CD5;&#x4E2D;&#xFF0C;&#x4F5C;&#x8005;&#x4E3B;&#x8981;&#x901A;&#x8FC7;&#x627E;&#x5230;&#x4E24;&#x4E2A;string&#x4E2D;&#x76F8;&#x7B49;&#x7684;&#x90A3;&#x4E2A;&#x503C;&#xFF0C;&#x7136;&#x540E;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x4F5C;&#x4E3A;&#x5B57;&#x4E32;&#x7EE7;&#x7EED;&#x5BFB;&#x627E;&#x4F7F;&#x7528;<strong>indexOf</strong>&#x51FD;&#x6570;&#xFF0C;&#x627E;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;&#x76F8;&#x7B49;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
+<pre><code class="lang-{}">    public static String longestCommonPrefix(String[] strs) {
+            if(strs.length==0){return &quot;&quot;;}
+            String  prefix = strs[0];
+            for(int i=1;i&lt;strs.length;i++)
+            {
+                while (strs[i].indexOf(prefix)!=0)
+                {
+                    prefix= prefix.substring(0,prefix.length()-1);
+                }
+            }
+
+            return prefix;
+    }
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="2019-12-23-Leetcode练习题21. Merge Two Sorted Lists.md" class="navigation navigation-next navigation-unique" aria-label="Next page: 21.Merge Two Sorted Lists">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"14.Longest Common Prefix","level":"1.1.5","depth":2,"next":{"title":"21.Merge Two Sorted Lists","level":"1.1.6","depth":2,"path":"chapter1/2019-12-23-Leetcode练习题21. Merge Two Sorted Lists.md","ref":"chapter1/2019-12-23-Leetcode练习题21. Merge Two Sorted Lists.md","articles":[]},"previous":{"title":"13.Roman to Integer","level":"1.1.4","depth":2,"ref":"","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/2019-12-18-Longest Common Prefix.md","mtime":"2019-12-18T12:42:40.972Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-01T09:40:01.522Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
