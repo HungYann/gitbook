@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>算法与数据结构 · GitBook</title>
+        <title>设计模式 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="chapter1/2019-12-14-Two Sum.html" />
+    <link rel="next" href="chapter2/2020-2-10-Java设计模式总结Iterator模式.html" />
     
-    
-    <link rel="prev" href="chapter2/2020-2-10-Java设计模式总结Iterator模式.html" />
     
 
     </head>
@@ -167,7 +165,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="DesignModelChapter2.html">
+        <li class="chapter active" data-level="1.7" data-path="DesignModelChapter2.html">
             
                 <a href="DesignModelChapter2.html">
             
@@ -199,7 +197,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.8" data-path="./">
+        <li class="chapter " data-level="1.8" data-path="./">
             
                 <a href="./">
             
@@ -417,7 +415,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >算法与数据结构</a>
+        <a href="." >设计模式</a>
     </h1>
 </div>
 
@@ -432,138 +430,10 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="leetcode&#x5237;&#x9898;&#x8BA1;&#x5212;">Leetcode&#x5237;&#x9898;&#x8BA1;&#x5212;</h1>
-<h3 id="&#x5DF2;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#xFF1A;">&#x5DF2;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#xFF1A;</h3>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>Title</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>Two Sum</td>
-</tr>
-<tr>
-<td>7</td>
-<td>Reverse Integer</td>
-</tr>
-<tr>
-<td>9</td>
-<td>Palindrome Number</td>
-</tr>
-<tr>
-<td>13</td>
-<td>Roman to Integer</td>
-</tr>
-<tr>
-<td>14</td>
-<td>Longest Common Prefix</td>
-</tr>
-<tr>
-<td>21</td>
-<td>Merge Two Sorted Lists</td>
-</tr>
-<tr>
-<td>26</td>
-<td>Remove Duplicates from Sorted Array</td>
-</tr>
-<tr>
-<td>27</td>
-<td>Remove Element</td>
-</tr>
-<tr>
-<td>28</td>
-<td>Implement strStr()</td>
-</tr>
-<tr>
-<td>35</td>
-<td>Search Insert Position</td>
-</tr>
-<tr>
-<td>58</td>
-<td>Length of Last Word</td>
-</tr>
-<tr>
-<td>237</td>
-<td>Delete Node in a Linked List</td>
-</tr>
-<tr>
-<td>704</td>
-<td>Binary Search</td>
-</tr>
-</tbody>
-</table>
-<h3 id="&#x6570;&#x636E;&#x7ED3;&#x6784;">&#x6570;&#x636E;&#x7ED3;&#x6784;:</h3>
-<h4 id="&#x6570;&#x7EC4;&#xFF1A;">&#x6570;&#x7EC4;&#xFF1A;</h4>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>Title</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>Two Sum</td>
-</tr>
-<tr>
-<td>26</td>
-<td>Remove Duplicates from Sorted Array</td>
-</tr>
-<tr>
-<td>27</td>
-<td>Remove Element</td>
-</tr>
-<tr>
-<td>35</td>
-<td>Search Insert Position</td>
-</tr>
-</tbody>
-</table>
-<h5 id="&#x94FE;&#x8868;">&#x94FE;&#x8868;</h5>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>Title</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>21</td>
-<td>Merge Two Sorted Lists</td>
-</tr>
-<tr>
-<td>237</td>
-<td>Delete Node in a Linked List</td>
-</tr>
-</tbody>
-</table>
-<h3 id="&#x7B97;&#x6CD5;">&#x7B97;&#x6CD5;</h3>
-<h4 id="&#x52A8;&#x6001;&#x89C4;&#x5212;">&#x52A8;&#x6001;&#x89C4;&#x5212;</h4>
-<hr>
-<h3 id="&#x5237;&#x9898;&#x6B65;&#x9AA4;">&#x5237;&#x9898;&#x6B65;&#x9AA4;</h3>
-<p>&#x5728;&#x5237;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x6211;&#x4F1A;&#x6309;&#x7167;&#x5982;&#x4E0B;&#x89C4;&#x5219;&#x8BB0;&#x5F55;&#x81EA;&#x5DF1;&#x7684;&#x5237;&#x9898;&#x6B65;&#x9AA4;&#xFF1A;</p>
-<ul>
-<li>1.&#x539F;&#x9898;&#x76EE;&#xFF08;&#x7B80;&#x5355;&#xFF0C;&#x4E2D;&#x7B49;&#xFF0C;&#x56F0;&#x96BE;&#xFF09;</li>
-<li>2.&#x81EA;&#x5DF1;&#x7684;&#x89E3;&#x6CD5;&#x7B2C;&#x4E00;&#x904D;</li>
-<li>3.&#x7F51;&#x4E0A;&#x597D;&#x7684;&#x89E3;&#x6CD5;</li>
-<li>4.&#x81EA;&#x5DF1;&#x53EF;&#x4EE5;&#x6539;&#x8FDB;&#x7684;&#x5730;&#x65B9;</li>
-<li>5.&#x8FDB;&#x4E00;&#x6B65;&#x7CBE;&#x7B80;&#x4F18;&#x5316;&#x81EA;&#x5DF1;&#x7684;&#x4EE3;&#x7801;&#x76F4;&#x81F3;&#x4EE3;&#x7801;&#x7B80;&#x65E0;&#x53EF;&#x7B80;</li>
-<li>6.&#x83B7;&#x5F97;&#x7684;&#x601D;&#x8003;</li>
-</ul>
-<h3 id="&#x4E3A;&#x4EC0;&#x4E48;&#x5237;leetcode">&#x4E3A;&#x4EC0;&#x4E48;&#x5237;Leetcode?</h3>
-<p>&#x5237;Leetcode&#x7684;&#x76EE;&#x7684;&#x5728;&#x4E8E;&#xFF1A;</p>
-<ul>
-<li>&#x5E0C;&#x671B;&#x901A;&#x8FC7;&#x5237;Leetcode&#x53EF;&#x4EE5;&#x953B;&#x70BC;&#x81EA;&#x5DF1;&#x7684;&#x7B97;&#x6CD5;&#x80FD;&#x529B;&#x3002;</li>
-<li>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5927;&#x5382;&#x7B97;&#x6CD5;&#x9762;&#x8BD5;</li>
-<li>&#x5728;&#x5DE5;&#x4F5C;&#x4EE5;&#x540E;&#x518D;&#x4E5F;&#x6CA1;&#x6709;&#x65F6;&#x95F4;&#x5237;&#x7B97;&#x6CD5;</li>
-<li>&#x575A;&#x6301;&#x4E00;&#x4EF6;&#x4E8B;&#xFF0C;&#x5E76;&#x628A;&#x5B83;&#x505A;&#x597D;</li>
-</ul>
+                                <h3 id="&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;">&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;</h3>
+<p>&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x7AE0;&#x8282;&#x4E3A;&#x672C;&#x4EBA;&#x5B66;&#x4E60;Java&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x7684;&#x603B;&#x7ED3;</p>
+<p>&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x6709;23&#x79CD;&#xFF0C;&#x672C;&#x4E66;&#x662F;&#x6211;&#x5B66;&#x4E60;&#x3010;&#x65E5;&#x3011;&#x7ED3;&#x57CE;&#x6D69;&#x7684;&#x300A;&#x56FE;&#x89E3;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x300B;&#x7684;&#x6587;&#x672C;&#x603B;&#x7ED3;&#xFF0C;&#x5E0C;&#x671B;&#x80FD;&#x5728;&#x5B66;&#x4E60;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x4E4B;&#x540E;&#xFF0C;&#x5BF9;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#x4EE5;&#x53CA;Java&#x8BBE;&#x8BA1;&#x6709;&#x4E00;&#x4E2A;&#x6E05;&#x6670;&#x6DF1;&#x523B;&#x7684;&#x4E86;&#x89E3;&#x3002;</p>
+<p>&#x672C;&#x7AE0;&#x5185;&#x5BB9;&#x4E2D;&#x6BCF;&#x4E00;&#x4E2A;&#x5B50;&#x7AE0;&#x8282;&#x4E3A;&#x4E00;&#x4E2A;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x7684;&#x5B66;&#x4E60;</p>
 
                                 
                                 </section>
@@ -591,12 +461,8 @@
 
             
                 
-                <a href="chapter2/2020-2-10-Java设计模式总结Iterator模式.html" class="navigation navigation-prev " aria-label="Previous page: Iterator模式">
-                    <i class="fa fa-angle-left"></i>
-                </a>
                 
-                
-                <a href="chapter1/2019-12-14-Two Sum.html" class="navigation navigation-next " aria-label="Next page: 1.Two Sum">
+                <a href="chapter2/2020-2-10-Java设计模式总结Iterator模式.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Iterator模式">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -607,7 +473,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"算法与数据结构","level":"1.8","depth":1,"next":{"title":"1.Two Sum","level":"1.8.1","depth":2,"path":"chapter1/2019-12-14-Two Sum.md","ref":"chapter1/2019-12-14-Two Sum.md","articles":[]},"previous":{"title":"Iterator模式","level":"1.7.1","depth":2,"path":"chapter2/2020-2-10-Java设计模式总结Iterator模式.md","ref":"chapter2/2020-2-10-Java设计模式总结Iterator模式.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2020-02-10T08:08:18.753Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-10T08:10:20.997Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"设计模式","level":"1.7","depth":1,"next":{"title":"Iterator模式","level":"1.7.1","depth":2,"path":"chapter2/2020-2-10-Java设计模式总结Iterator模式.md","ref":"chapter2/2020-2-10-Java设计模式总结Iterator模式.md","articles":[]},"previous":{"title":"计算机网络","level":"1.6","depth":1,"ref":"","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"DesignModelChapter2.md","mtime":"2020-02-10T08:20:12.440Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-10T08:10:20.997Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
