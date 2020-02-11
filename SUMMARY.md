@@ -4,17 +4,26 @@
 
 * 常用框架
 
-* 数据库
-
 * Java虚拟机
 
 * 实际项目
 
 * 计算机网络
 
+* [数据库](DatabaseChapter3.md)
+
+  * [Mysql常用命令及语法规范](chapter3/2020-2-4-Mysql学习.md)
+  * [MySQL目录结构和Linux配置](chapter3/2020-2-3-MySQL目录结构和Linux配置.md)
+
 * [设计模式](DesignModelChapter2.md)
 
+  * [设计模式试题](chapter2/设计模式试题.md)
   * [Iterator模式](chapter2/2020-2-10-Java设计模式总结Iterator模式.md)
+  * [Adapter适配器模式](chapter2/2020-2-10-Adapter适配器模式.md)
+  * [Template method模式](chapter2/2020-2-11-Template method模式.md)
+  * [Factory Method模式](chapter2/2020-2-11-Factory Method模式.md)
+  * [Singleton模式](chapter2/2020-2-11-Singleton模式.md)
+  * [Prototype模式](chapter2/2020-2-12-Prototype模式.md)
 
 * [算法与数据结构](README.md)	
 
