@@ -1,0 +1,1006 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>JSTL学习总结 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="2020-2-6-Mybatis缓存.html" />
+    
+    
+    <link rel="prev" href="2020-2-13-SpringMVC开发步骤和运行原理.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <span>
+            
+                    
+                    Java基础
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Java虚拟机
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    实际项目
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    计算机网络
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../framework.html">
+            
+                <a href="../framework.html">
+            
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="2020-2-13-创建SpringMVC 程序.html">
+            
+                <a href="2020-2-13-创建SpringMVC 程序.html">
+            
+                    
+                    创建SpringMVC 程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="2020-2-13-SpringMVC开发步骤和运行原理.html">
+            
+                <a href="2020-2-13-SpringMVC开发步骤和运行原理.html">
+            
+                    
+                    SpringMVC开发步骤和运行原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.3" data-path="2020-2-1-JSTL学习总结.html">
+            
+                <a href="2020-2-1-JSTL学习总结.html">
+            
+                    
+                    JSTL学习总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="2020-2-6-Mybatis缓存.html">
+            
+                <a href="2020-2-6-Mybatis缓存.html">
+            
+                    
+                    Mybatis缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="2020-2-8-Spring框架IOC.html">
+            
+                <a href="2020-2-8-Spring框架IOC.html">
+            
+                    
+                    Spring 框架IOC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="2020-2-7-java反射技术.html">
+            
+                <a href="2020-2-7-java反射技术.html">
+            
+                    
+                    Java反射技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../DatabaseChapter3.html">
+            
+                <a href="../DatabaseChapter3.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../chapter3/MySQL安装配置.html">
+            
+                <a href="../chapter3/MySQL安装配置.html">
+            
+                    
+                    MySQL安装配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../chapter3/2020-2-12-SQL基础.html">
+            
+                <a href="../chapter3/2020-2-12-SQL基础.html">
+            
+                    
+                    SQL基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../chapter3/MySQL支持的数据类型.html">
+            
+                <a href="../chapter3/MySQL支持的数据类型.html">
+            
+                    
+                    MySQL支持的数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../chapter3/2020-2-15-MySQL中的运算符、常用函数.html">
+            
+                <a href="../chapter3/2020-2-15-MySQL中的运算符、常用函数.html">
+            
+                    
+                    MySQL中的运算符、常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../chapter3/2020-2-16-Mysql存储引擎、数据类型和字符集.html">
+            
+                <a href="../chapter3/2020-2-16-Mysql存储引擎、数据类型和字符集.html">
+            
+                    
+                    Mysql存储引擎、数据类型和字符集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../chapter3/2020-2-18-MySQL体系结构和存储引擎.html">
+            
+                <a href="../chapter3/2020-2-18-MySQL体系结构和存储引擎.html">
+            
+                    
+                    MySQL体系结构和存储引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../DesignModelChapter2.html">
+            
+                <a href="../DesignModelChapter2.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../chapter2/设计模式试题.html">
+            
+                <a href="../chapter2/设计模式试题.html">
+            
+                    
+                    设计模式试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../chapter2/2020-2-10-Java设计模式总结Iterator模式.html">
+            
+                <a href="../chapter2/2020-2-10-Java设计模式总结Iterator模式.html">
+            
+                    
+                    Iterator模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../chapter2/2020-2-10-Adapter适配器模式.html">
+            
+                <a href="../chapter2/2020-2-10-Adapter适配器模式.html">
+            
+                    
+                    Adapter适配器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../chapter2/2020-2-11-Template method模式.html">
+            
+                <a href="../chapter2/2020-2-11-Template method模式.html">
+            
+                    
+                    Template method模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../chapter2/2020-2-11-Factory Method模式.html">
+            
+                <a href="../chapter2/2020-2-11-Factory Method模式.html">
+            
+                    
+                    Factory Method模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../chapter2/2020-2-11-Singleton模式.html">
+            
+                <a href="../chapter2/2020-2-11-Singleton模式.html">
+            
+                    
+                    Singleton模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../chapter2/2020-2-12-Prototype模式.html">
+            
+                <a href="../chapter2/2020-2-12-Prototype模式.html">
+            
+                    
+                    Prototype模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    算法与数据结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../chapter1/2019-12-14-Two Sum.html">
+            
+                <a href="../chapter1/2019-12-14-Two Sum.html">
+            
+                    
+                    1.Two Sum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../chapter1/2019-12-14-Reverse Integer.html">
+            
+                <a href="../chapter1/2019-12-14-Reverse Integer.html">
+            
+                    
+                    7.Reverse Integer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../chapter1/2019-12-16-Palindrome Number.html">
+            
+                <a href="../chapter1/2019-12-16-Palindrome Number.html">
+            
+                    
+                    9.Palindrome Number
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" >
+            
+                <span>
+            
+                    
+                    13.Roman to Integer
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="../chapter1/2019-12-18-Longest Common Prefix.html">
+            
+                <a href="../chapter1/2019-12-18-Longest Common Prefix.html">
+            
+                    
+                    14.Longest Common Prefix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="../chapter1/2019-12-23-Leetcode练习题21. Merge Two Sorted Lists.md">
+            
+                <span>
+            
+                    
+                    21.Merge Two Sorted Lists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" >
+            
+                <span>
+            
+                    
+                    26.Remove Duplicates from Sorted Array
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.8" data-path="../chapter1/2019-12-15-Remove Element.html">
+            
+                <a href="../chapter1/2019-12-15-Remove Element.html">
+            
+                    
+                    27.Remove Element
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.9" data-path="../chapter1/2020-1-1-Implement strStr.html">
+            
+                <a href="../chapter1/2020-1-1-Implement strStr.html">
+            
+                    
+                    28.Implement strStr()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.10" data-path="../chapter1/2019-12-19-Search Insert Position.html">
+            
+                <a href="../chapter1/2019-12-19-Search Insert Position.html">
+            
+                    
+                    35.Search Insert Position
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.11" data-path="../chapter1/2019-12-20-Length of Last Word.html">
+            
+                <a href="../chapter1/2019-12-20-Length of Last Word.html">
+            
+                    
+                    58.Length of Last Word
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.12" data-path="../chapter1/2019-12-28-Delete Node in a Linked List.html">
+            
+                <a href="../chapter1/2019-12-28-Delete Node in a Linked List.html">
+            
+                    
+                    237.Delete Node in a Linked List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.13" >
+            
+                <span>
+            
+                    
+                    704. Binary Search
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >JSTL学习总结</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h4 id="&#x4E00;&#x3001;jstl&#x7B80;&#x4ECB;&#x53CA;&#x73AF;&#x5883;&#x642D;&#x5EFA;">&#x4E00;&#x3001;JSTL&#x7B80;&#x4ECB;&#x53CA;&#x73AF;&#x5883;&#x642D;&#x5EFA;</h4>
+<p>jstl&#x662F;java&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5B9A;&#x5236;&#x6807;&#x8BB0;&#x5E93;&#x96C6;&#xFF0C; jstl&#x5B9E;&#x73B0;&#x4E86;jsp&#x9875;&#x9762;&#x4E2D;&#x4EE3;&#x7801;&#x590D;&#x7528;&#xFF0C;&#x63D0;&#x9AD8;jsp&#x53EF;&#x8BFB;&#x6027;</p>
+<p>&#x5BFC;&#x5165;jstl jar&#x5305;</p>
+<p><img src="https://tva1.sinaimg.cn/large/006tNbRwgy1gbh1wk7m1wj309q06m0ta.jpg" alt=""></p>
+<h4 id="&#x4E8C;&#x3001;el&#x8868;&#x8FBE;&#x5F0F;&#x914D;&#x5408;&#x4F7F;&#x7528;jstl">&#x4E8C;&#x3001;EL&#x8868;&#x8FBE;&#x5F0F;&#x914D;&#x5408;&#x4F7F;&#x7528;JSTL</h4>
+<p>&#x5728;jsp&#x9996;&#x884C;&#x52A0;&#x5165;</p>
+<p><em>&lt;%@taglib uri=&quot;<a href="http://java.sun.com/jsp/jstl/core" target="_blank">http://java.sun.com/jsp/jstl/core</a>&quot; prefix=&quot;c&quot;%&gt;</em></p>
+<p>&#x4F7F;&#x7528;<strong>c:out</strong>&#x6807;&#x7B7E;&#x8F93;&#x5165;&#x4E00;&#x4E2A;&#x5E38;&#x91CF;</p>
+<p>&#x8F93;&#x51FA;&#x4E00;&#x4E2A;&#x5E38;&#x91CF;&#xFF1A;</p>
+<pre><code class="lang-{}">&lt;c:out value=&quot;first&quot;&gt;&lt;/c:out&gt;
+</code></pre>
+<p>&#x8F93;&#x51FA;&#x7B80;&#x5355;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;</p>
+<pre><code class="lang-{}">&lt;c:out value=&quot;${1*2}&quot;&gt;&lt;/c:out&gt;
+</code></pre>
+<p>EL&#x8868;&#x8FBE;&#x5F0F;&#x8F93;&#x51FA;&#x53D8;&#x91CF;</p>
+<pre><code class="lang-{}">&lt;% String username2=&quot;null&quot;;  
+
+session.setAttribute(&quot;name2&quot;,&quot;jessia&quot;); %&gt;
+
+&lt;c:out value=&quot;${name1}&quot; default=&quot;error&quot;&gt;&lt;/c:out&gt;
+</code></pre>
+<p>&#x8F6C;&#x4E49;&#x5B57;&#x7B26;&#x4E32;:</p>
+<pre><code class="lang-{}">&lt;!-- &#x8F6C;&#x4E49;&#x5B57;&#x7B26; escapeXml&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x6210;false--&gt;
+
+&lt;c:out value=&quot;&amp;ltout&amp;gt Label&quot; escapeXml=&quot;false&quot;&gt;&lt;/c:out&gt;
+</code></pre>
+<h4 id="&#x4E09;&#x3001;jstl&#x6838;&#x5FC3;&#x6807;&#x7B7E;&#x7684;&#x4F7F;&#x7528;">&#x4E09;&#x3001;JSTL&#x6838;&#x5FC3;&#x6807;&#x7B7E;&#x7684;&#x4F7F;&#x7528;</h4>
+<ul>
+<li>JSTL&#x6807;&#x7B7E;&#x4E4B;set&#x6807;&#x7B7E;</li>
+</ul>
+<p><strong>var</strong>&#x5C5E;&#x6027;&#x662F;&#x53D8;&#x91CF;&#x540D;&#x5B57;&#xFF0C;&#x7528;&#x6765;&#x5B58;&#x50A8;<strong>value</strong>&#x503C;&#xFF1B;</p>
+<p><strong>scope</strong>&#x5C5E;&#x6027;&#x7528;&#x6765;&#x5B58;&#x50A8;&#x751F;&#x6548;&#x8303;&#x56F4;</p>
+<pre><code class="lang-{}">&lt;!-- &#x5B58;&#x503C;&#x5230;scope&#x4E2D; --&gt;
+
+&lt;!--&#x6CD5;&#x4E00;:--&gt;
+&lt;c:set value=&quot;today&quot; var=&quot;day&quot; scope=&quot;session&quot;&gt; &lt;/c:set&gt;
+
+&lt;c:out value=&quot;${day}&quot;&gt;&lt;/c:out&gt;&lt;br&gt;
+
+&lt;!--&#x6CD5;&#x4E8C;:--&gt;
+&lt;c:set var=&quot;day&quot; scope=&quot;session&quot;&gt;eleven&lt;/c:set&gt;
+&lt;c:out value=&quot;${day}&quot;&gt;&lt;/c:out&gt;
+</code></pre>
+<p>&#x5B58;&#x503C;&#x5728;<strong>javaBean</strong>&#x4E2D;</p>
+<pre><code class="lang-{}">&lt;c:set target=&quot;${person}&quot; property=&quot;name&quot; value=&quot;zhangsan&quot;&gt;&lt;/c:set&gt;
+&lt;c:out value=&quot;${person.name}&quot;&gt;&lt;/c:out&gt; 
+
+
+&lt;c:set target=&quot;${person}&quot; property=&quot;age&quot; value=&quot;12&quot;&gt;&lt;/c:set&gt;
+&lt;c:out value=&quot;${person.age}&quot;&gt;&lt;/c:out&gt; 
+
+
+&lt;c:set target=&quot;${person}&quot; property=&quot;address&quot; value=&quot;beijing&quot;&gt;&lt;/c:set&gt;
+&lt;c:out value=&quot;${person.address}&quot;&gt;&lt;/c:out&gt;
+</code></pre>
+<ul>
+<li>JSTL&#x6807;&#x7B7E;&#x4E4B;<strong>remove</strong>&#x6807;&#x7B7E;</li>
+</ul>
+<pre><code class="lang-{}">&lt;c:set var=&quot;firstName&quot; value=&quot;lady&quot;&gt;&lt;/c:set&gt;
+&lt;c:remove var=&quot;firstName&quot;&gt;&lt;/c:remove&gt;
+
+&lt;c:set var=&quot;secondName&quot; value=&quot;wang&quot;&gt;&lt;/c:set&gt;
+&lt;c:out value=&quot;${secondName}&quot;&gt;&lt;/c:out&gt;
+</code></pre>
+<ul>
+<li>JSTL&#x6807;&#x7B7E;&#x4E4B;<strong>catch</strong>&#x6807;&#x7B7E;</li>
+</ul>
+<pre><code class="lang-{}">&lt;c:catch var=&quot;error&quot;&gt;
+    &lt;c:set target=&quot;ss&quot;  property=&quot;asd&quot;&gt;&lt;/c:set&gt;
+&lt;/c:catch&gt;
+
+&lt;c:out value=&quot;${error}&quot;&gt;&lt;/c:out&gt;
+</code></pre>
+<ul>
+<li>JSTL&#x6807;&#x7B7E;&#x4E4B;<strong>if</strong>&#x6807;&#x7B7E;</li>
+</ul>
+<pre><code class="lang-{}">&lt;form action=&quot;firstDemo.jsp&quot; method=&quot;post&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;score&quot;  value=&quot;
+    ${param.score}&quot;/&gt;
+
+    &lt;input type=&quot;submit&quot; value=&quot;submit&quot;/&gt;
+&lt;/form&gt;    
+
+
+
+&lt;!-- &#x4F18;&#x79C0; --&gt;
+
+&lt;c:if test=&quot;${param.score&gt;=90}&quot; var=&quot;result&quot; scope=&quot;application&quot;&gt;
+        &lt;c:out value=&quot;&#x606D;&#x559C;&#xFF0C;&#x60A8;&#x7684;&#x6210;&#x7EE9;&#x4F18;&#x79C0;!&quot;&gt;&lt;/c:out&gt;
+&lt;/c:if&gt;
+
+&lt;c:if test=&quot;${(param.score&gt;=80)&amp;&amp;(param.score&lt;90)}&quot; var=&quot;result&quot; scope=&quot;application&quot;&gt;
+        &lt;c:out value=&quot;&#x606D;&#x559C;&#xFF0C;&#x60A8;&#x7684;&#x6210;&#x7EE9;&#x4F18;&#x79C0;2!&quot;&gt;&lt;/c:out&gt;
+&lt;/c:if&gt;
+
+&lt;c:out value=&quot;${applicationScope.resutl}&quot;&gt;&lt;/c:out&gt;
+</code></pre>
+<ul>
+<li>JSTL&#x6807;&#x7B7E;&#x4E4B;<strong>choose-when-otherwise</strong></li>
+</ul>
+<pre><code class="lang-{}">
+&lt;c:choose&gt;
+        &lt;c:when test=&quot;${param.score&gt;=90 &amp;&amp; param.socre&lt;100}&quot;&gt;
+            &lt;c:out value=&quot;&#x60A8;&#x7684;&#x6210;&#x7EE9;&#x4F18;&#x79C0;!&quot;&gt;&lt;/c:out&gt;
+        &lt;/c:when&gt;
+
+        &lt;c:when test=&quot;${param.score&gt;=80 &amp;&amp; param.score&lt;90}&quot;&gt;
+            &lt;c:out value=&quot;&#x60A8;&#x7684;&#x6210;&#x7EE9;&#x826F;&#x597D;&#xFF01;&quot;&gt;&lt;/c:out&gt;
+        &lt;/c:when&gt;    
+
+        &lt;c:otherwise&gt;
+            &lt;c:out value=&quot;&#x8F93;&#x5165;&quot;&gt;&lt;/c:out&gt;
+        &lt;/c:otherwise&gt;
+&lt;/c:choose&gt;
+
+&lt;c:choose&gt;
+    &lt;c:when test=&quot;${param.score==100}&quot;&gt;
+        &lt;c:out value=&quot;&#x592A;&#x68D2;&#x4E86;&#xFF01;&#x4F60;&#x662F;No1&quot;&gt;&lt;/c:out&gt;
+    &lt;/c:when&gt;
+&lt;/c:choose&gt;
+</code></pre>
+<ul>
+<li>JSTL&#x6807;&#x7B7E;&#x4E4B;<strong>forEach</strong>&#x6807;&#x7B7E;</li>
+</ul>
+<p>&#x63A5;&#x7740;&#x5BFC;&#x5165;&#x6307;&#x4EE4;&#xFF1A;</p>
+<p>&lt;%@ page import=&quot;java.util.ArrayList&quot; %&gt;</p>
+<p>&lt;%@ page import=&quot;java.util.List&quot; %&gt;</p>
+<pre><code class="lang-{}">&lt;% List&lt;String&gt; fruits = new ArrayList&lt;String&gt;();  %&gt;
+
+    &lt;%
+        fruits.add(&quot;apple&quot;);
+        fruits.add(&quot;pear&quot;);
+        fruits.add(&quot;orange&quot;);
+        request.setAttribute(&quot;fruits&quot;,fruits);
+    %&gt;
+
+    &lt;c:forEach var=&quot;fruit&quot; items=&quot;${fruits}&quot; begin=&quot;0&quot; end=&quot;1&quot;&gt;
+        &lt;c:out value=&quot;${fruit}&quot;&gt;&lt;/c:out&gt;&lt;br&gt;
+    &lt;/c:forEach&gt;
+
+&lt;!-- &#x90E8;&#x5206;&#x904D;&#x5386;&#x5E76;&#x6307;&#x5B9A;&#x6B65;&#x957F; --&gt;
+
+
+    &lt;c:forEach var=&quot;fruit&quot; items=&quot;${fruits}&quot; begin=&quot;0&quot; end=&quot;1&quot; varStatus=&quot;fru&quot;&gt;&lt;br&gt;
+            &lt;c:out value=&quot;${fruit}&quot;&gt;&lt;/c:out&gt;&lt;br&gt;
+            &lt;c:out value=&quot;index&#x5C5E;&#x6027;&#x503C;:${fru.index}&quot;&gt;&lt;/c:out&gt;
+            &lt;c:out value=&quot;count&#x5C5E;&#x6027;&#x503C;:${fru.count}&quot;&gt;&lt;/c:out&gt;
+            &lt;c:out value=&quot;first&#x5C5E;&#x6027;&#x503C;:${fru.first}&quot;&gt;&lt;/c:out&gt;
+            &lt;c:out value=&quot;last&#x5C5E;&#x6027;&#x503C;:${fru.last}&quot;&gt;&lt;/c:out&gt;
+    &lt;/c:forEach&gt;
+</code></pre>
+<ul>
+<li>JSTL&#x6807;&#x7B7E;&#x4E4B;<strong>forTocken</strong>&#x6807;&#x7B7E;</li>
+</ul>
+<pre><code class="lang-{}">&lt;c:forTokens items=&quot;010-11213&quot; delims=&quot;-&quot; var=&quot;num&quot;&gt;
+        &lt;c:out value=&quot;${num}&quot;&gt;&lt;/c:out&gt;
+&lt;/c:forTokens&gt;
+</code></pre>
+<ul>
+<li>JSTL&#x6807;&#x7B7E;&#x4E4B;<strong>import</strong>&#x6807;&#x7B7E;</li>
+</ul>
+<pre><code class="lang-{}">
+&lt;!--  import &#x6807;&#x7B7E;&#x7684;&#x7528;&#x6CD5;--&gt;
+
+&lt;c:catch var=&quot;error09&quot;&gt;
+
+        &lt;c:import url=&quot;http://www.imooc.com&quot;&gt;&lt;/c:import&gt;
+
+&lt;/c:catch&gt;
+
+&lt;c:out value=&quot;${error09}&quot;&gt;&lt;/c:out&gt;
+
+
+
+&lt;c:catch var=&quot;error09&quot;&gt;
+
+&lt;/c:catch&gt;
+
+&lt;c:out value=&quot;${error09}&quot;&gt;&lt;/c:out&gt;
+
+&lt;!-- &#x5BFC;&#x5165;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84; --&gt;
+
+&lt;c:catch var=&quot;error08&quot;&gt;
+
+        &lt;c:import url=&quot;&quot; charEncoding=&quot;gbk&quot; var=&quot;tt&quot; scope=&quot;session&quot;&gt; &lt;/c:import&gt;
+
+&lt;/c:catch&gt;
+
+&lt;c:out value=&quot;error08&quot;&gt;&lt;/c:out&gt;
+
+&lt;c:out value=&quot;import&#x6807;&#x7B7E;&#x5B58;&#x50A8;tt&#x5B57;&#x7B26;&#x4E32;&#x5185;&#x5BB9;:${sessionScope.tt}&quot;  &gt;&lt;/c:out&gt;
+
+
+&lt;!-- context&#x5C5E;&#x6027; --&gt;
+
+&lt;c:catch value=&quot;error07&quot;&gt;
+        &lt;c:import url=&quot;&quot; context=&quot;/AnotherWebProject&quot;&gt;&lt;/c:import&gt;
+&lt;/c:catch&gt;
+
+&lt;c:out value=&quot;error07&quot;&gt;&lt;/c:out&gt;
+</code></pre>
+<ul>
+<li>JSTL&#x6807;&#x7B7E;&#x4E4B;<strong>redirect</strong>&#x6807;&#x7B7E;</li>
+</ul>
+<pre><code class="lang-{}">
+&lt;!-- redirct&#x6807;&#x7B7E;&#x7684;&#x7528;&#x6CD5; --&gt;
+
+    &lt;c:redirect url=&quot;firstDemo.jsp&quot;&gt;
+        &lt;c:param name=&quot;username&quot;&gt;Lily&lt;/c:param&gt;
+        &lt;c:param name=&quot;password&quot;&gt;aaa&lt;/c:param&gt;
+    &lt;/c:redirect&gt;
+&lt;!-- &#x53D6;&#x51FA;&#x53C2;&#x6570; --&gt;
+
+&lt;c:out value=&quot;username&#x662F;${param.username}&quot;&gt;&lt;/c:out&gt;
+</code></pre>
+<ul>
+<li>JSTL&#x6807;&#x7B7E;&#x4E4B;<strong>url</strong>&#x6807;&#x7B7E;</li>
+</ul>
+<pre><code class="lang-{}">&lt;!-- url&#x6807;&#x7B7E;&#x52A8;&#x6001;&#x751F;&#x6210;url --&gt;
+
+&lt;c:if test=&quot;1&lt;3&quot;&gt;
+    &lt;c:set var=&quot;partUrl&quot; value=&quot;aa&quot;&gt;&lt;/c:set&gt;
+&lt;/c:if&gt;
+&lt;c:url value=&quot;http://localhost:8080/${partUrl}&quot; var=&quot;newUrl&quot; scope=&quot;session&quot;&gt;&lt;/c:url&gt;
+&lt;a href=&quot;${newUrl}&quot;&gt;&#x65B0;&#x7684;url&lt;/a&gt;
+</code></pre>
+<h4 id="&#x56DB;&#x3001;jstl&#x51FD;&#x6570;&#x7684;&#x4F7F;&#x7528;">&#x56DB;&#x3001;JSTL&#x51FD;&#x6570;&#x7684;&#x4F7F;&#x7528;</h4>
+<p>&#x5BFC;&#x5165;&#x51FD;&#x6570;</p>
+<pre><code class="lang-{}">&lt;%@ taglib prefix=&quot;fn&quot; uri=&quot;http://java.sun.com/jsp/jstl/functions&quot; %&gt;
+</code></pre>
+<pre><code class="lang-jsp">&lt;c:out value=&quot;&#x4F60;&#x597D;helloword&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x662F;&#x5426;&#x5305;&#x542B;hello$
+
+{fn:contains(&apos;helloword&apos;,&apos;hello&apos;) }&quot;&gt;&lt;/c:out&gt;
+
+
+&lt;c:out value=&quot;&#x4F60;&#x597D;helloword&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x662F;&#x5426;&#x5305;&#x542B;word$
+
+{fn:containsIgnoreCase(&apos;Helloword&apos;,&apos;word&apos;)}&quot;&gt;&lt;/c:out&gt;
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2020-2-13-SpringMVC开发步骤和运行原理.html" class="navigation navigation-prev " aria-label="Previous page: SpringMVC开发步骤和运行原理">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="2020-2-6-Mybatis缓存.html" class="navigation navigation-next " aria-label="Next page: Mybatis缓存">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"JSTL学习总结","level":"1.5.3","depth":2,"next":{"title":"Mybatis缓存","level":"1.5.4","depth":2,"path":"chapter4/2020-2-6-Mybatis缓存.md","ref":"chapter4/2020-2-6-Mybatis缓存.md","articles":[]},"previous":{"title":"SpringMVC开发步骤和运行原理","level":"1.5.2","depth":2,"path":"chapter4/2020-2-13-SpringMVC开发步骤和运行原理.md","ref":"chapter4/2020-2-13-SpringMVC开发步骤和运行原理.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter4/2020-2-1-JSTL学习总结.md","mtime":"2020-02-13T07:20:47.889Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-07T11:04:47.265Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

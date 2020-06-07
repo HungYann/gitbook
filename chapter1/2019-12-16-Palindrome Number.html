@@ -1,0 +1,864 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>9.Palindrome Number · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="2019-12-14-Reverse Integer.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <span>
+            
+                    
+                    Java基础
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Java虚拟机
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    实际项目
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    计算机网络
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../framework.html">
+            
+                <a href="../framework.html">
+            
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter4/2020-2-13-创建SpringMVC 程序.html">
+            
+                <a href="../chapter4/2020-2-13-创建SpringMVC 程序.html">
+            
+                    
+                    创建SpringMVC 程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter4/2020-2-13-SpringMVC开发步骤和运行原理.html">
+            
+                <a href="../chapter4/2020-2-13-SpringMVC开发步骤和运行原理.html">
+            
+                    
+                    SpringMVC开发步骤和运行原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chapter4/2020-2-1-JSTL学习总结.html">
+            
+                <a href="../chapter4/2020-2-1-JSTL学习总结.html">
+            
+                    
+                    JSTL学习总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../chapter4/2020-2-6-Mybatis缓存.html">
+            
+                <a href="../chapter4/2020-2-6-Mybatis缓存.html">
+            
+                    
+                    Mybatis缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../chapter4/2020-2-8-Spring框架IOC.html">
+            
+                <a href="../chapter4/2020-2-8-Spring框架IOC.html">
+            
+                    
+                    Spring 框架IOC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../chapter4/2020-2-7-java反射技术.html">
+            
+                <a href="../chapter4/2020-2-7-java反射技术.html">
+            
+                    
+                    Java反射技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../DatabaseChapter3.html">
+            
+                <a href="../DatabaseChapter3.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../chapter3/MySQL安装配置.html">
+            
+                <a href="../chapter3/MySQL安装配置.html">
+            
+                    
+                    MySQL安装配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../chapter3/2020-2-12-SQL基础.html">
+            
+                <a href="../chapter3/2020-2-12-SQL基础.html">
+            
+                    
+                    SQL基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../chapter3/MySQL支持的数据类型.html">
+            
+                <a href="../chapter3/MySQL支持的数据类型.html">
+            
+                    
+                    MySQL支持的数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../chapter3/2020-2-15-MySQL中的运算符、常用函数.html">
+            
+                <a href="../chapter3/2020-2-15-MySQL中的运算符、常用函数.html">
+            
+                    
+                    MySQL中的运算符、常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../chapter3/2020-2-16-Mysql存储引擎、数据类型和字符集.html">
+            
+                <a href="../chapter3/2020-2-16-Mysql存储引擎、数据类型和字符集.html">
+            
+                    
+                    Mysql存储引擎、数据类型和字符集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../chapter3/2020-2-18-MySQL体系结构和存储引擎.html">
+            
+                <a href="../chapter3/2020-2-18-MySQL体系结构和存储引擎.html">
+            
+                    
+                    MySQL体系结构和存储引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../DesignModelChapter2.html">
+            
+                <a href="../DesignModelChapter2.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../chapter2/设计模式试题.html">
+            
+                <a href="../chapter2/设计模式试题.html">
+            
+                    
+                    设计模式试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../chapter2/2020-2-10-Java设计模式总结Iterator模式.html">
+            
+                <a href="../chapter2/2020-2-10-Java设计模式总结Iterator模式.html">
+            
+                    
+                    Iterator模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../chapter2/2020-2-10-Adapter适配器模式.html">
+            
+                <a href="../chapter2/2020-2-10-Adapter适配器模式.html">
+            
+                    
+                    Adapter适配器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../chapter2/2020-2-11-Template method模式.html">
+            
+                <a href="../chapter2/2020-2-11-Template method模式.html">
+            
+                    
+                    Template method模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../chapter2/2020-2-11-Factory Method模式.html">
+            
+                <a href="../chapter2/2020-2-11-Factory Method模式.html">
+            
+                    
+                    Factory Method模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../chapter2/2020-2-11-Singleton模式.html">
+            
+                <a href="../chapter2/2020-2-11-Singleton模式.html">
+            
+                    
+                    Singleton模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../chapter2/2020-2-12-Prototype模式.html">
+            
+                <a href="../chapter2/2020-2-12-Prototype模式.html">
+            
+                    
+                    Prototype模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    算法与数据结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="2019-12-14-Two Sum.html">
+            
+                <a href="2019-12-14-Two Sum.html">
+            
+                    
+                    1.Two Sum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="2019-12-14-Reverse Integer.html">
+            
+                <a href="2019-12-14-Reverse Integer.html">
+            
+                    
+                    7.Reverse Integer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3.3" data-path="2019-12-16-Palindrome Number.html">
+            
+                <a href="2019-12-16-Palindrome Number.html">
+            
+                    
+                    9.Palindrome Number
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" >
+            
+                <span>
+            
+                    
+                    13.Roman to Integer
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="2019-12-18-Longest Common Prefix.html">
+            
+                <a href="2019-12-18-Longest Common Prefix.html">
+            
+                    
+                    14.Longest Common Prefix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="2019-12-23-Leetcode练习题21. Merge Two Sorted Lists.md">
+            
+                <span>
+            
+                    
+                    21.Merge Two Sorted Lists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" >
+            
+                <span>
+            
+                    
+                    26.Remove Duplicates from Sorted Array
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.8" data-path="2019-12-15-Remove Element.html">
+            
+                <a href="2019-12-15-Remove Element.html">
+            
+                    
+                    27.Remove Element
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.9" data-path="2020-1-1-Implement strStr.html">
+            
+                <a href="2020-1-1-Implement strStr.html">
+            
+                    
+                    28.Implement strStr()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.10" data-path="2019-12-19-Search Insert Position.html">
+            
+                <a href="2019-12-19-Search Insert Position.html">
+            
+                    
+                    35.Search Insert Position
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.11" data-path="2019-12-20-Length of Last Word.html">
+            
+                <a href="2019-12-20-Length of Last Word.html">
+            
+                    
+                    58.Length of Last Word
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.12" data-path="2019-12-28-Delete Node in a Linked List.html">
+            
+                <a href="2019-12-28-Delete Node in a Linked List.html">
+            
+                    
+                    237.Delete Node in a Linked List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.13" >
+            
+                <span>
+            
+                    
+                    704. Binary Search
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >9.Palindrome Number</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="9-palindrome-number">9. Palindrome Number</h2>
+<p><strong>Question:</strong></p>
+<p>Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.</p>
+<p>Example 1:</p>
+<pre><code class="lang-{}">Input: 121
+Output: true
+</code></pre>
+<p>Example 2:</p>
+<pre><code class="lang-{}">Input: -121
+Output: false
+Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
+</code></pre>
+<p>Example 3:</p>
+<pre><code class="lang-{}">Input: 10
+Output: false
+Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
+Follow up:
+</code></pre>
+<p>Coud you solve it without converting the integer to a string?</p>
+<hr>
+<p><strong>Solution:</strong></p>
+<p>&#x89E3;&#x6CD5;&#x4E00;&#xFF1A;</p>
+<p>&#x4F7F;&#x7528;&#x56DE;&#x6587;&#x6570;&#x89E3;&#x6CD5;&#xFF0C;&#x5C06;&#x8F93;&#x5165;x&#x503C;&#x5206;&#x5272;&#x5B58;&#x50A8;&#x5728;&#x6570;&#x7EC4;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x53D6;&#x51FA;&#x5224;&#x65AD;&#x3002;</p>
+<pre><code class="lang-{}">class Solution {
+    public boolean isPalindrome(int x) {
+            if(x&lt;0)
+            {
+                return false;
+            }
+
+            if(x==0)
+            {
+                return true;
+            }
+
+            if(x&gt;0)
+            {
+                String string= x+&quot;&quot;;
+                int length = string.length();
+                int[] index = new int[length];
+                int reserve = 0;
+                int i =0 ;
+                while(x!=0)
+                {
+                    index[i++] = x%10;
+                    x/=10;
+                }
+
+                for(int j=0;j&lt;length/2;j++)
+                {
+
+                    if(index[j]!=index[length-1-j])
+                    {
+                        return false;
+                    }
+
+                }
+
+                return true;
+
+            }
+            return false;
+    }
+}
+</code></pre>
+<p>&#x89E3;&#x6CD5;&#x4E8C;&#xFF1A;</p>
+<p>&#x5C06;<strong>x</strong>&#x8F6C;&#x5316;&#x6210;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x7136;&#x540E;&#x5229;&#x7528;charAt&#x5206;&#x5272;&#x6C42;character&#x7C7B;&#x578B;&#xFF0C;&#x5728;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#xFF1B;&#x867D;&#x7136;&#x4E0D;&#x7B26;&#x5408;&#x9898;&#x610F;&#xFF0C;&#x4F46;&#x662F;&#x7528;&#x5230;&#x53CC;&#x6307;&#x9488;&#x77E5;&#x8BC6;&#xFF0C;&#x4E2A;&#x4EBA;&#x8BA4;&#x4E3A;&#x6BD4;&#x8F83;&#x7B80;&#x6D01;&#x3002;</p>
+<pre><code class="lang-{}">public boolean isPalindrome(int x) {
+    String str = String.valueOf(x);
+    int start = 0;
+    int end = str.length() - 1;
+    while(start &lt; end){
+        if(str.charAt(start++) != str.charAt(end--)) return false;
+    }
+    return true;
+}
+</code></pre>
+<p>&#x89E3;&#x6CD5;&#x4E09;&#xFF1A;</p>
+<p>&#x8F6C;&#x6362;&#x4E00;&#x534A;&#x7684;&#x6570;&#x5B57;&#xFF1A;</p>
+<p>Revert half of the number</p>
+<p><strong>Intuition</strong></p>
+<p>The first idea that comes to mind is to convert the number into string, and check if the string is a palindrome, but this would require extra non-constant space for creating the string which is not allowed by the problem description.</p>
+<p><strong>Second idea would be reverting the number itself, and then compare the number with original number, if they are the same, then the number is a palindrome. However, if the reversed number is larger than \text{int.MAX}int.MAX, we will hit integer overflow problem.</strong></p>
+<p>Following the thoughts based on the second idea, to avoid the overflow issue of the reverted number, what if we only revert half of the <strong>int</strong> number? After all, the reverse of the last half of the palindrome should be the same as the first half of the number, if the number is a palindrome.</p>
+<p>For example, if the input is 1221, if we can revert the last part of the number &quot;1221&quot; from &quot;21&quot; to &quot;12&quot;, and compare it with the first half of the number &quot;12&quot;, since 12 is the same as 12, we know that the number is a palindrome.</p>
+<p>Let&apos;s see how we could translate this idea into an algorithm.</p>
+<hr>
+<p><strong>Algorithm</strong></p>
+<p>First of all we should take care of some edge cases. All negative numbers are not palindrome, for example: -123 is not a palindrome since the &apos;-&apos; does not equal to &apos;3&apos;. So we can return false for all negative numbers.</p>
+<p><strong>Now let&apos;s think about how to revert the last half of the number.</strong> For number 1221, if we do 1221 % 10, we get the last digit 1, to get the second to the last digit, we need to remove the last digit from 1221, we could do so by dividing it by 10, 1221 / 10 = 122. Then we can get the <strong>last digit</strong> again by doing a modulus by 10, 122 % 10 = 2, and if we multiply the last digit by 10 and add the second last digit, 1 * 10 + 2 = 12, it gives us the reverted number we want. Continuing this process would give us the reverted number with more digits.</p>
+<p>Now the question is, how do we know that we&apos;ve reached the half of the number?</p>
+<p><strong>Since we divided the number by 10, and multiplied the reversed number by 10, when the original number is less than the reversed number, it means we&apos;ve processed half of the number digits.</strong></p>
+<pre><code>public boolean isPalindrome(int num){
+   if(num &lt; 0) return  false; 
+   int reversed = 0, remainder, original = num;
+   while(num != 0) {
+        remainder = num % 10; // reversed integer is stored in variable
+        reversed = reversed * 10 + remainder; //multiply reversed by 10 then add the remainder so it gets stored at next decimal place.
+        num  /= 10;  //the last digit is removed from num after division by 10.
+    }
+    // palindrome if original and reversed are equal
+    return original == reversed;
+}
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2019-12-14-Reverse Integer.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 7.Reverse Integer">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"9.Palindrome Number","level":"2.3.3","depth":2,"next":{"title":"13.Roman to Integer","level":"2.3.4","depth":2,"ref":"","articles":[]},"previous":{"title":"7.Reverse Integer","level":"2.3.2","depth":2,"path":"chapter1/2019-12-14-Reverse Integer.md","ref":"chapter1/2019-12-14-Reverse Integer.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/2019-12-16-Palindrome Number.md","mtime":"2019-12-16T07:31:02.772Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-07T11:04:47.265Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

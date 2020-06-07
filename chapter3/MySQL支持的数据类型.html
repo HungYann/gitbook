@@ -1,0 +1,846 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>MySQL支持的数据类型 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="2020-2-15-MySQL中的运算符、常用函数.html" />
+    
+    
+    <link rel="prev" href="2020-2-12-SQL基础.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <span>
+            
+                    
+                    Java基础
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Java虚拟机
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    实际项目
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    计算机网络
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../framework.html">
+            
+                <a href="../framework.html">
+            
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter4/2020-2-13-创建SpringMVC 程序.html">
+            
+                <a href="../chapter4/2020-2-13-创建SpringMVC 程序.html">
+            
+                    
+                    创建SpringMVC 程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter4/2020-2-13-SpringMVC开发步骤和运行原理.html">
+            
+                <a href="../chapter4/2020-2-13-SpringMVC开发步骤和运行原理.html">
+            
+                    
+                    SpringMVC开发步骤和运行原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chapter4/2020-2-1-JSTL学习总结.html">
+            
+                <a href="../chapter4/2020-2-1-JSTL学习总结.html">
+            
+                    
+                    JSTL学习总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../chapter4/2020-2-6-Mybatis缓存.html">
+            
+                <a href="../chapter4/2020-2-6-Mybatis缓存.html">
+            
+                    
+                    Mybatis缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../chapter4/2020-2-8-Spring框架IOC.html">
+            
+                <a href="../chapter4/2020-2-8-Spring框架IOC.html">
+            
+                    
+                    Spring 框架IOC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../chapter4/2020-2-7-java反射技术.html">
+            
+                <a href="../chapter4/2020-2-7-java反射技术.html">
+            
+                    
+                    Java反射技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../DatabaseChapter3.html">
+            
+                <a href="../DatabaseChapter3.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="MySQL安装配置.html">
+            
+                <a href="MySQL安装配置.html">
+            
+                    
+                    MySQL安装配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="2020-2-12-SQL基础.html">
+            
+                <a href="2020-2-12-SQL基础.html">
+            
+                    
+                    SQL基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.3" data-path="MySQL支持的数据类型.html">
+            
+                <a href="MySQL支持的数据类型.html">
+            
+                    
+                    MySQL支持的数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="2020-2-15-MySQL中的运算符、常用函数.html">
+            
+                <a href="2020-2-15-MySQL中的运算符、常用函数.html">
+            
+                    
+                    MySQL中的运算符、常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="2020-2-16-Mysql存储引擎、数据类型和字符集.html">
+            
+                <a href="2020-2-16-Mysql存储引擎、数据类型和字符集.html">
+            
+                    
+                    Mysql存储引擎、数据类型和字符集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="2020-2-18-MySQL体系结构和存储引擎.html">
+            
+                <a href="2020-2-18-MySQL体系结构和存储引擎.html">
+            
+                    
+                    MySQL体系结构和存储引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../DesignModelChapter2.html">
+            
+                <a href="../DesignModelChapter2.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../chapter2/设计模式试题.html">
+            
+                <a href="../chapter2/设计模式试题.html">
+            
+                    
+                    设计模式试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../chapter2/2020-2-10-Java设计模式总结Iterator模式.html">
+            
+                <a href="../chapter2/2020-2-10-Java设计模式总结Iterator模式.html">
+            
+                    
+                    Iterator模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../chapter2/2020-2-10-Adapter适配器模式.html">
+            
+                <a href="../chapter2/2020-2-10-Adapter适配器模式.html">
+            
+                    
+                    Adapter适配器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../chapter2/2020-2-11-Template method模式.html">
+            
+                <a href="../chapter2/2020-2-11-Template method模式.html">
+            
+                    
+                    Template method模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../chapter2/2020-2-11-Factory Method模式.html">
+            
+                <a href="../chapter2/2020-2-11-Factory Method模式.html">
+            
+                    
+                    Factory Method模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../chapter2/2020-2-11-Singleton模式.html">
+            
+                <a href="../chapter2/2020-2-11-Singleton模式.html">
+            
+                    
+                    Singleton模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../chapter2/2020-2-12-Prototype模式.html">
+            
+                <a href="../chapter2/2020-2-12-Prototype模式.html">
+            
+                    
+                    Prototype模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    算法与数据结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../chapter1/2019-12-14-Two Sum.html">
+            
+                <a href="../chapter1/2019-12-14-Two Sum.html">
+            
+                    
+                    1.Two Sum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../chapter1/2019-12-14-Reverse Integer.html">
+            
+                <a href="../chapter1/2019-12-14-Reverse Integer.html">
+            
+                    
+                    7.Reverse Integer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../chapter1/2019-12-16-Palindrome Number.html">
+            
+                <a href="../chapter1/2019-12-16-Palindrome Number.html">
+            
+                    
+                    9.Palindrome Number
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" >
+            
+                <span>
+            
+                    
+                    13.Roman to Integer
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="../chapter1/2019-12-18-Longest Common Prefix.html">
+            
+                <a href="../chapter1/2019-12-18-Longest Common Prefix.html">
+            
+                    
+                    14.Longest Common Prefix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="../chapter1/2019-12-23-Leetcode练习题21. Merge Two Sorted Lists.md">
+            
+                <span>
+            
+                    
+                    21.Merge Two Sorted Lists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" >
+            
+                <span>
+            
+                    
+                    26.Remove Duplicates from Sorted Array
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.8" data-path="../chapter1/2019-12-15-Remove Element.html">
+            
+                <a href="../chapter1/2019-12-15-Remove Element.html">
+            
+                    
+                    27.Remove Element
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.9" data-path="../chapter1/2020-1-1-Implement strStr.html">
+            
+                <a href="../chapter1/2020-1-1-Implement strStr.html">
+            
+                    
+                    28.Implement strStr()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.10" data-path="../chapter1/2019-12-19-Search Insert Position.html">
+            
+                <a href="../chapter1/2019-12-19-Search Insert Position.html">
+            
+                    
+                    35.Search Insert Position
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.11" data-path="../chapter1/2019-12-20-Length of Last Word.html">
+            
+                <a href="../chapter1/2019-12-20-Length of Last Word.html">
+            
+                    
+                    58.Length of Last Word
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.12" data-path="../chapter1/2019-12-28-Delete Node in a Linked List.html">
+            
+                <a href="../chapter1/2019-12-28-Delete Node in a Linked List.html">
+            
+                    
+                    237.Delete Node in a Linked List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.13" >
+            
+                <span>
+            
+                    
+                    704. Binary Search
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >MySQL支持的数据类型</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <blockquote>
+<p>&#x6570;&#x503C;&#x7C7B;&#x578B;</p>
+</blockquote>
+<p>MySQL&#x4E2D;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;</p>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbv1182ng1j311u0fuak8.jpg" alt="image-20200213200427608"></p>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbv11eofwtj312e0bq13m.jpg" alt="image-20200213200440959"></p>
+<p>MySQL&#x652F;&#x6301;&#x5728;&#x7C7B;&#x578B;&#x540D;&#x79F0;&#x540E;&#x9762;&#x7684;&#x5C0F;&#x62EC;&#x53F7;&#x5185;&#x6307;&#x5B9A;&#x663E;&#x793A;&#x5BBD;&#x5EA6;&#xFF0C;</p>
+<p>&#x5982;int(5)&#x8868;&#x793A;&#x5F53;&#x6570;&#x503C;&#x5BBD;&#x5EA6;&#x5C0F;&#x4E8E;5&#x4F4D;&#x7684;&#x65F6;&#x5019;&#x5728;&#x6570;&#x5B57;&#x524D;&#x9762;&#x586B;&#x6EE1;&#x5BBD;&#x5EA6;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4E0D;&#x663E;&#x793A;&#x6307;&#x5B9A;&#x5BBD;&#x5EA6;&#xFF0C;&#x5219;&#x9ED8;&#x8BA4;&#x4E3A;int(11)</p>
+<p><code>zerofill</code>&#x5C5E;&#x6027;&#x662F;&#x7ED9;&#x5B58;&#x50A8;&#x7684;&#x6570;&#x503C;&#x524D;&#x9762;&#x81EA;&#x52A8;&#x586B;&#x5145;0.&#x4F46;&#x662F;int(5)&#x5E76;&#x6CA1;&#x6709;&#x5728;&#x5BBD;&#x5EA6;&#x5C0F;&#x4E8E;5&#x4F4D;&#x7684;&#x65F6;&#x5019;&#x586B;&#x5145;0&#xFF0C;&#x53EA;&#x6709;&#x5728;&#x660E;&#x786E;&#x4FEE;&#x6539;&#x8868;&#x5E76;&#x4F7F;&#x7528;zerofill&#x53C2;&#x6570;&#x65F6;&#x624D;&#x8D77;&#x4F5C;&#x7528;</p>
+<pre><code class="lang-mysql">create table t2(id int,id2 int(5))
+insert into t2 VALUES(2,2)
+alter table t2 MODIFY id int ZEROFILL;
+SELECT * from t2;
+</code></pre>
+<p><code>AUTO_INCREMENT</code>&#x5728;&#x9700;&#x8981;&#x4EA7;&#x751F;&#x4F4D;&#x79FB;&#x6807;&#x8BC6;&#x7B26;&#x6216;&#x987A;&#x5E8F;&#x503C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F7F;&#x7528;&#x6B64;&#x53C2;&#x6570;&#xFF0C;&#x8BE5;&#x503C;&#x4ECE;1&#x5F00;&#x59CB;</p>
+<pre><code class="lang-mysql">CREATE TABLE AI(ID INT AUTO_INCREMENT NOT NULL PRIMARY KEY);
+</code></pre>
+<p>MySQL&#x5206;&#x4E3A;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<p><code>&#x6D6E;&#x70B9;&#x6570;</code>&#x548C;<code>&#x5B9A;&#x70B9;&#x6570;</code></p>
+<p>&#x6D6E;&#x70B9;&#x6570;&#x5305;&#x62EC;float&#x548C;double&#xFF0C;&#x800C;&#x5B9A;&#x70B9;&#x6570;&#x53EA;&#x6709;decimal&#x4E00;&#x79CD;&#x8868;&#x793A;</p>
+<p><strong>(M,D)</strong>&#x8868;&#x793A;&#x6574;&#x6570;&#x4F4D;+&#x5C0F;&#x6570;&#x4F4D;</p>
+<p><code>M</code>-&#x7CBE;&#x5EA6;</p>
+<p><code>D</code>-&#x6807;&#x5EA6;</p>
+<p>float&#x548C;double&#x5728;&#x4E0D;&#x6307;&#x5B9A;&#x7CBE;&#x5EA6;&#x65F6;&#xFF0C;&#x9ED8;&#x8BA4;&#x4F1A;&#x6309;&#x7167;&#x5B9E;&#x9645;&#x7684;&#x7CBE;&#x5EA6;&#x6765;&#x663E;&#x793A;&#xFF0C;&#x800C;decimal&#x9ED8;&#x8BA4;&#x7684;&#x6574;&#x6570;&#x4F4D;&#x4E3A;10&#xFF0C;&#x9ED8;&#x8BA4;&#x7684;&#x5C0F;&#x6570;&#x4F4D;&#x4E3A;0.&#x5373;decimal(10,0)</p>
+<p>BIT(&#x4F4D;)&#x7C7B;&#x578B;&#xFF0C;&#x7528;&#x4E8E;&#x5B58;&#x653E;&#x5B57;&#x6BB5;&#x503C;&#xFF0C;BIT(M)&#x7528;&#x6765;&#x5B58;&#x653E;&#x591A;&#x4F4D;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#xFF0C;M&#x7684;&#x8303;&#x56F4;1&#xFF5E;64</p>
+<pre><code class="lang-mysql">CREATE TABLE AI(ID INT AUTO_INCREMENT NOT NULL PRIMARY KEY);
+ALTER TABLE AI ADD COLUMN bin bit(1);
+desc AI;
+INSERT INTO AI(bin) VALUES(1);
+SELECT * from AI;
+</code></pre>
+<blockquote>
+<p>&#x65F6;&#x95F4;&#x548C;&#x65E5;&#x671F;&#x7C7B;&#x578B;</p>
+</blockquote>
+<ul>
+<li>&#x5982;&#x679C;&#x7528;&#x6765;&#x8868;&#x793A;&#x5E74;&#x6708;&#x65E5;&#xFF0C;&#x901A;&#x5E38;&#x7528;DATE&#x6765;&#x8868;&#x793A;</li>
+<li>&#x5982;&#x679C;&#x7528;&#x6765;&#x8868;&#x793A;&#x5E74;&#x6708;&#x65E5;&#x65F6;&#x5206;&#x8868;&#xFF0C;&#x901A;&#x5E38;&#x7528;DATETIME&#x8868;&#x793A;</li>
+<li>&#x5982;&#x679C;&#x7528;&#x6765;&#x8868;&#x793A;&#xFF0C;&#x901A;&#x5E38;&#x7528;TIME&#x6765;&#x8868;&#x793A;</li>
+</ul>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbvscwat48j31360a6tg0.jpg" alt="image-20200214114951635"></p>
+<pre><code class="lang-mysql">CREATE TABLE t (d date, t time, dt datetime);
+DESC t;
+INSERT INTO t VALUES(now(), now(), now());
+SELECT * FROM t;
+</code></pre>
+<p>TIMESTAMP&#x548C;DATETIME&#x8868;&#x793A;&#x7684;&#x65B9;&#x6CD5;&#x975E;&#x5E38;&#x7C7B;&#x4F3C;&#x3002;</p>
+<ul>
+<li>TIMESTAMP&#x652F;&#x6301;&#x7684;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x8F83;&#x5C0F;&#xFF0C;&#x5176;&#x53D6;&#x503C;&#x8303;&#x56F4;&#x4ECE;19700101080001&#x5230;2038&#x5E74;&#x7684;&#x67D0;&#x4E2A;&#x65F6;&#x95F4;&#x3002;</li>
+<li>DATETIME&#x662F;&#x4ECE;1000-01-01 00:00:00 &#x5230; 9999-12-31 23:59:59&#xFF0C;&#x8303;&#x56F4;&#x66F4;&#x5927;&#x3002;</li>
+</ul>
+<blockquote>
+<p>&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;</p>
+</blockquote>
+<ul>
+<li>CHAR&#x548C;VARCHAR&#x7C7B;&#x578B;</li>
+</ul>
+<p>CHAR&#x5217;&#x957F;&#x5EA6;&#x56FA;&#x5B9A;&#x4E3A;&#x521B;&#x5EFA;&#x8868;&#x65F6;&#x7684;&#x58F0;&#x660E;&#x7684;&#x957F;&#x5EA6;</p>
+<p>VARCHAR&#x5217;&#x4E2D;&#x7684;&#x503C;&#x4E3A;&#x53EF;&#x53D8;&#x957F;&#x5B57;&#x7B26;&#x4E32;</p>
+<pre><code class="lang-mysql">CREATE TABLE vc(v VARCHAR(4), c CHAR(4));
+INSERT INTO vc VALUES(&apos;ab  &apos;,&apos;ab  &apos;);
+SELECT length(v),length(c) from vc;
+SELECT CONCAT(v,&apos;+&apos;),CONCAT(c,&apos;+&apos;) from vc;
+</code></pre>
+<ul>
+<li>BINARY&#x548C;VARBINARY&#x7C7B;&#x578B;</li>
+</ul>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbvw82q15gj31520k6nib.jpg" alt="image-20200214140339975"></p>
+<ul>
+<li>ENUM&#x7C7B;&#x578B;</li>
+</ul>
+<p>ENUM<strong>&#x679A;&#x4E3E;&#x7C7B;&#x578B;</strong>&#xFF0C;&#x5B83;&#x7684;&#x503C;&#x8303;&#x56F4;&#x9700;&#x8981;&#x5728;&#x521B;&#x5EFA;&#x8868;&#x65F6;&#x901A;&#x8FC7;&#x679A;&#x4E3E;&#x7C7B;&#x578B;&#x663E;&#x5F0F;&#x6307;&#x5B9A;&#xFF0C;&#x5BF9;1~255&#x4E2A;&#x6210;&#x5458;&#x7684;&#x679A;&#x4E3E;&#x9700;&#x8981;1&#x4E2A;&#x5B57;&#x8282;&#x5B58;&#x50A8;&#xFF1B;&#x5BF9;255&#xFF5E;65535&#x4E2A;&#x6210;&#x5458;&#xFF0C;&#x9700;&#x8981;2&#x4E2A;&#x5B57;&#x8282;&#x5B58;&#x50A8;&#x3002;&#x6700;&#x591A;&#x5141;&#x8BB8;65535&#x4E2A;&#x6210;&#x5458;&#x3002;</p>
+<pre><code class="lang-mysql">CREATE table enum(gender enum(&apos;M&apos;,&apos;F&apos;));
+insert into enum values(&apos;M&apos;),(&apos;1&apos;),(&apos;f&apos;),(NULL);
+SELECT * FROM enum;
+</code></pre>
+<p>&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</p>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbvwfokyfkj306c064t8p.jpg" alt="image-20200214141059011"></p>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x51FA;ENUM&#x7C7B;&#x578B;&#x5FFD;&#x7565;&#x5927;&#x5C0F;&#x5199;&#xFF0C;&#x5728;&#x5B58;&#x50A8;&quot;M&quot;&#x3001;&quot;f&quot;&#x65F6;&#x5C06;&#x5B83;&#x4EEC;&#x90FD;&#x8F6C;&#x6362;&#x6210;&#x5927;&#x5199;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x5BF9;&#x4E8E;&#x63D2;&#x5165;&#x4E0D;&#x5728;ENUM&#x8303;&#x56F4;&#x5185;&#x7684;&#x503C;&#x65F6;&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x8B66;&#x544A;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2020-2-12-SQL基础.html" class="navigation navigation-prev " aria-label="Previous page: SQL基础">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="2020-2-15-MySQL中的运算符、常用函数.html" class="navigation navigation-next " aria-label="Next page: MySQL中的运算符、常用函数">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"MySQL支持的数据类型","level":"2.1.3","depth":2,"next":{"title":"MySQL中的运算符、常用函数","level":"2.1.4","depth":2,"path":"chapter3/2020-2-15-MySQL中的运算符、常用函数.md","ref":"chapter3/2020-2-15-MySQL中的运算符、常用函数.md","articles":[]},"previous":{"title":"SQL基础","level":"2.1.2","depth":2,"path":"chapter3/2020-2-12-SQL基础.md","ref":"chapter3/2020-2-12-SQL基础.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter3/MySQL支持的数据类型.md","mtime":"2020-02-14T06:24:16.146Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-07T11:04:47.265Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

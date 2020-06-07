@@ -1,0 +1,896 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>MySQL中的运算符、常用函数 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="2020-2-16-Mysql存储引擎、数据类型和字符集.html" />
+    
+    
+    <link rel="prev" href="MySQL支持的数据类型.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <span>
+            
+                    
+                    Java基础
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Java虚拟机
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    实际项目
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    计算机网络
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../framework.html">
+            
+                <a href="../framework.html">
+            
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter4/2020-2-13-创建SpringMVC 程序.html">
+            
+                <a href="../chapter4/2020-2-13-创建SpringMVC 程序.html">
+            
+                    
+                    创建SpringMVC 程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter4/2020-2-13-SpringMVC开发步骤和运行原理.html">
+            
+                <a href="../chapter4/2020-2-13-SpringMVC开发步骤和运行原理.html">
+            
+                    
+                    SpringMVC开发步骤和运行原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chapter4/2020-2-1-JSTL学习总结.html">
+            
+                <a href="../chapter4/2020-2-1-JSTL学习总结.html">
+            
+                    
+                    JSTL学习总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../chapter4/2020-2-6-Mybatis缓存.html">
+            
+                <a href="../chapter4/2020-2-6-Mybatis缓存.html">
+            
+                    
+                    Mybatis缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../chapter4/2020-2-8-Spring框架IOC.html">
+            
+                <a href="../chapter4/2020-2-8-Spring框架IOC.html">
+            
+                    
+                    Spring 框架IOC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../chapter4/2020-2-7-java反射技术.html">
+            
+                <a href="../chapter4/2020-2-7-java反射技术.html">
+            
+                    
+                    Java反射技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../DatabaseChapter3.html">
+            
+                <a href="../DatabaseChapter3.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="MySQL安装配置.html">
+            
+                <a href="MySQL安装配置.html">
+            
+                    
+                    MySQL安装配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="2020-2-12-SQL基础.html">
+            
+                <a href="2020-2-12-SQL基础.html">
+            
+                    
+                    SQL基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="MySQL支持的数据类型.html">
+            
+                <a href="MySQL支持的数据类型.html">
+            
+                    
+                    MySQL支持的数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.4" data-path="2020-2-15-MySQL中的运算符、常用函数.html">
+            
+                <a href="2020-2-15-MySQL中的运算符、常用函数.html">
+            
+                    
+                    MySQL中的运算符、常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="2020-2-16-Mysql存储引擎、数据类型和字符集.html">
+            
+                <a href="2020-2-16-Mysql存储引擎、数据类型和字符集.html">
+            
+                    
+                    Mysql存储引擎、数据类型和字符集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="2020-2-18-MySQL体系结构和存储引擎.html">
+            
+                <a href="2020-2-18-MySQL体系结构和存储引擎.html">
+            
+                    
+                    MySQL体系结构和存储引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../DesignModelChapter2.html">
+            
+                <a href="../DesignModelChapter2.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../chapter2/设计模式试题.html">
+            
+                <a href="../chapter2/设计模式试题.html">
+            
+                    
+                    设计模式试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../chapter2/2020-2-10-Java设计模式总结Iterator模式.html">
+            
+                <a href="../chapter2/2020-2-10-Java设计模式总结Iterator模式.html">
+            
+                    
+                    Iterator模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../chapter2/2020-2-10-Adapter适配器模式.html">
+            
+                <a href="../chapter2/2020-2-10-Adapter适配器模式.html">
+            
+                    
+                    Adapter适配器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../chapter2/2020-2-11-Template method模式.html">
+            
+                <a href="../chapter2/2020-2-11-Template method模式.html">
+            
+                    
+                    Template method模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../chapter2/2020-2-11-Factory Method模式.html">
+            
+                <a href="../chapter2/2020-2-11-Factory Method模式.html">
+            
+                    
+                    Factory Method模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../chapter2/2020-2-11-Singleton模式.html">
+            
+                <a href="../chapter2/2020-2-11-Singleton模式.html">
+            
+                    
+                    Singleton模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../chapter2/2020-2-12-Prototype模式.html">
+            
+                <a href="../chapter2/2020-2-12-Prototype模式.html">
+            
+                    
+                    Prototype模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    算法与数据结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../chapter1/2019-12-14-Two Sum.html">
+            
+                <a href="../chapter1/2019-12-14-Two Sum.html">
+            
+                    
+                    1.Two Sum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../chapter1/2019-12-14-Reverse Integer.html">
+            
+                <a href="../chapter1/2019-12-14-Reverse Integer.html">
+            
+                    
+                    7.Reverse Integer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../chapter1/2019-12-16-Palindrome Number.html">
+            
+                <a href="../chapter1/2019-12-16-Palindrome Number.html">
+            
+                    
+                    9.Palindrome Number
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" >
+            
+                <span>
+            
+                    
+                    13.Roman to Integer
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="../chapter1/2019-12-18-Longest Common Prefix.html">
+            
+                <a href="../chapter1/2019-12-18-Longest Common Prefix.html">
+            
+                    
+                    14.Longest Common Prefix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="../chapter1/2019-12-23-Leetcode练习题21. Merge Two Sorted Lists.md">
+            
+                <span>
+            
+                    
+                    21.Merge Two Sorted Lists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" >
+            
+                <span>
+            
+                    
+                    26.Remove Duplicates from Sorted Array
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.8" data-path="../chapter1/2019-12-15-Remove Element.html">
+            
+                <a href="../chapter1/2019-12-15-Remove Element.html">
+            
+                    
+                    27.Remove Element
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.9" data-path="../chapter1/2020-1-1-Implement strStr.html">
+            
+                <a href="../chapter1/2020-1-1-Implement strStr.html">
+            
+                    
+                    28.Implement strStr()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.10" data-path="../chapter1/2019-12-19-Search Insert Position.html">
+            
+                <a href="../chapter1/2019-12-19-Search Insert Position.html">
+            
+                    
+                    35.Search Insert Position
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.11" data-path="../chapter1/2019-12-20-Length of Last Word.html">
+            
+                <a href="../chapter1/2019-12-20-Length of Last Word.html">
+            
+                    
+                    58.Length of Last Word
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.12" data-path="../chapter1/2019-12-28-Delete Node in a Linked List.html">
+            
+                <a href="../chapter1/2019-12-28-Delete Node in a Linked List.html">
+            
+                    
+                    237.Delete Node in a Linked List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.13" >
+            
+                <span>
+            
+                    
+                    704. Binary Search
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >MySQL中的运算符、常用函数</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="mysql&#x4E2D;&#x7684;&#x8FD0;&#x7B97;&#x7B26;">MySQL&#x4E2D;&#x7684;&#x8FD0;&#x7B97;&#x7B26;</h3>
+<h4 id="&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x7B26;">&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x7B26;</h4>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbwz9aq124j311q0aen32.jpg" alt="image-20200215123410519"></p>
+<pre><code class="lang-mysql">SELECT 0.1+0.333,0.1-0.333,0.1*0.333,1/2,1%2;
+</code></pre>
+<p>&#x5176;&#x4E2D;&#x5728;&#x9664;&#x6CD5;&#x8FD0;&#x7B97;&#x548C;&#x6A21;&#x8FD0;&#x7B97;&#x4E2D;&#xFF0C;&#x9664;&#x6570;&#x4E3A;0&#xFF0C;&#x5C06;&#x662F;&#x975E;&#x6CD5;&#x6570;&#xFF0C;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x4E3A;NULL</p>
+<pre><code class="lang-mysql">select 1/0,100%0;
+</code></pre>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbwzdnteigj307w03eq2v.jpg" alt="image-20200215123825306"></p>
+<p>&#x5BF9;&#x4E8E;&#x6A21;&#x8FD0;&#x7B97;&#xFF0C;&#x8FD8;&#x6709;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x8868;&#x8FBE;&#x65B9;&#x5F0F;&#xFF0C;&#x4F7F;&#x7528;MOD(a,b)&#x51FD;&#x6570;&#x4E0E;a%b&#x6548;&#x679C;&#x4E00;&#x6837;</p>
+<pre><code class="lang-mysql">SELECT 3%2,mod(3,2)
+</code></pre>
+<h4 id="&#x6BD4;&#x8F83;&#x8FD0;&#x7B97;&#x7B26;">&#x6BD4;&#x8F83;&#x8FD0;&#x7B97;&#x7B26;</h4>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbwzr5bpkfj312m0h8qc7.jpg" alt="image-20200215125121767"></p>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbwzreupjkj3126082aei.jpg" alt="image-20200215125137230"></p>
+<p>&#x6BD4;&#x8F83;&#x8FD0;&#x7B97;&#x7B26;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x6BD4;&#x8F83;&#x6570;&#x5B57;&#x3001;&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x8868;&#x8FBE;&#x5F0F;&#x3002;&#x6570;&#x5B57;&#x4F5C;&#x4E3A;&#x6D6E;&#x70B9;&#x6570;&#x6BD4;&#x8F83;&#xFF0C;</p>
+<p>&#x5B57;&#x7B26;&#x4E32;&#x4EE5;&#x4E0D;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#x7684;&#x65B9;&#x5F0F;&#x6BD4;&#x8F83;&#x3002;</p>
+<ul>
+<li>NULL&#x4E0D;&#x80FD;&#x7528;&#x4E8E;&#x7B49;&#x4E8E;&#x6BD4;&#x8F83;</li>
+</ul>
+<pre><code class="lang-mysql">SELECT 1=0,1=1,NULL=NULL;
+</code></pre>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbwzwocec3j30d003s3yh.jpg" alt="image-20200215125641622"></p>
+<ul>
+<li>&quot;&lt;&gt;&quot;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x548C;&quot;=&quot;&#x76F8;&#x53CD;&#x3002;&quot;NULL&quot;&#x4E0D;&#x80FD;&#x7528;&#x4E8E;&#x201C;&lt;&gt;&#x201D;&#x6BD4;&#x8F83;</li>
+<li>&#x201C;&lt;=&gt;&#x201D;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x548C;&quot;=&quot;&#x7C7B;&#x4F3C;&#xFF0C;&#x5728;&#x64CD;&#x4F5C;&#x6570;&#x76F8;&#x7B49;&#x65F6;&#x503C;&#x4E3A;1&#xFF0C;&#x4E0D;&#x540C;&#x4E4B;&#x5904;&#x5728;&#x4E8E;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;NULL &#x7684;&#x6BD4;&#x8F83;&#x3002;</li>
+</ul>
+<p>&quot;LIKE&quot;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x4F7F;&#x7528;&#x683C;&#x5F0F;&#x4E3A;&quot;a LIKE %123%&quot;, &#x5F53;a&#x4E2D;&#x542B;&#x6709;123&#x65F6;&#x8FD4;&#x56DE;&#x4E3A;1&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;0</p>
+<pre><code class="lang-mysql">select 10 between 10 and 20, 9 between 10 and 20;
+select 1 in (1,2,3), &apos;t&apos; in (&apos;t&apos;,&apos;a&apos;,&apos;b&apos;,&apos;l&apos;,&apos;e&apos;), 0 in (1,2)
+SELECT 0 is null, null is null;
+select 0 is not null, null is not null;
+SELECT 123456 like &apos;123%&apos;, 123456 like &apos;%123%&apos;, 123456 like &apos;%321%&apos;;
+</code></pre>
+<p>&#x201C;regexp&#x201D;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x4F7F;&#x7528;&#x683C;&#x5F0F;&#x4E3A;&#x201C;str regexp str_pat&#x201D;&#xFF0C;&#x5F53;str&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x542B;&#x6709;str_pat&#x76F8;&#x5339;&#x914D;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x65F6;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;1&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;&#x4E3A;0.</p>
+<pre><code class="lang-mysql">SELECT &apos;abcdef&apos; regexp &apos;ab&apos;, &apos;abcdefg&apos; regexp &apos;k&apos;
+</code></pre>
+<h4 id="&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;">&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;</h4>
+<p>&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;&#xFF08;&#x5E03;&#x5C14;&#x8FD0;&#x7B97;&#x7B26;&#xFF09;</p>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx19eitc1j312u0am446.jpg" alt="image-20200215134331382"></p>
+<h4 id="&#x4F4D;&#x8FD0;&#x7B97;&#x7B26;">&#x4F4D;&#x8FD0;&#x7B97;&#x7B26;</h4>
+<p>&#x4F4D;&#x8FD0;&#x7B97;&#x662F;&#x6307;&#x5C06;&#x7ED9;&#x5B9A;&#x7684;&#x64CD;&#x4F5C;&#x6570;&#x8F6C;&#x5316;&#x4E3A;&#x4E8C;&#x8FDB;&#x5236;&#x540E;&#xFF0C;&#x5BF9;&#x5404;&#x4E2A;&#x64CD;&#x4F5C;&#x6570;&#x7684;&#x6BCF;&#x4E00;&#x4F4D;&#x90FD;&#x8FDB;&#x884C;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x3002;</p>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx1co1svvj314w0byn3i.jpg" alt="image-20200215134627571"></p>
+<pre><code class="lang-mysql">select 2&amp;3;
+select 2&amp;3&amp;4;
+select 2|3;
+select 2^3;
+select ~1, ~18446744073709551614;
+SELECT bin(18446744073709551614);
+select 100&gt;&gt;3;
+select 100&lt;&lt;3
+</code></pre>
+<h3 id="&#x5E38;&#x7528;&#x51FD;&#x6570;">&#x5E38;&#x7528;&#x51FD;&#x6570;</h3>
+<h4 id="&#x5B57;&#x7B26;&#x4E32;&#x51FD;&#x6570;">&#x5B57;&#x7B26;&#x4E32;&#x51FD;&#x6570;</h4>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx206q99xj313c0ewk2i.jpg" alt="image-20200215140915396"></p>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx20hikhzj31360ca46i.jpg" alt="image-20200215140932942"></p>
+<p>&#x4E00;&#x4E9B;&#x5E38;&#x89C1;&#x5B57;&#x7B26;&#x4E32;&#x51FD;&#x6570;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</p>
+<p>&#x4EFB;&#x4F55;&#x5B57;&#x7B26;&#x4E32;&#x4E0E;NULL&#x8FDE;&#x63A5;&#x90FD;&#x662F;NULL</p>
+<pre><code class="lang-mysql">select concat(&apos;aaa&apos;,&apos;bbbb&apos;,&apos;cccc&apos;),concat(&apos;aaa&apos;,null);
+</code></pre>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx1yj3srej30ge03ot8s.jpg" alt="image-20200215140740263"></p>
+<pre><code class="lang-mysql">select insert(&apos;beijing2008you&apos;,12,3,&apos;me&apos;)
+</code></pre>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx22cokjhj30ca03w74f.jpg" alt="image-20200215141121059"></p>
+<pre><code class="lang-mysql">SELECT LOWER(&apos;BEIJING2008&apos;), UPPER(&apos;bejing2008&apos;);
+</code></pre>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx3ri7zurj30ha032wep.jpg" alt="image-20200215151006587"></p>
+<pre><code class="lang-mysql">select left(&apos;beijing2008&apos;,7),LEFT(&apos;beijing&apos;,NULL),RIGHT(&quot;beijing2008&quot;,4)
+</code></pre>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx4tjlvk4j30ns03saaa.jpg" alt="image-20200215154640659"></p>
+<pre><code class="lang-mysql">select ltrim(&apos; |beijing&apos;),rtrim(&apos;beijing|   &apos;)
+</code></pre>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx4wgz3fjj30d203gjrg.jpg" alt="image-20200215154929335"></p>
+<pre><code class="lang-mysql">select repeat(&apos;mysql&apos;,3)
+</code></pre>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx4xggjzjj306k038aa2.jpg" alt="image-20200215155026555"></p>
+<pre><code class="lang-mysql">select replace(&apos;beijng_2020&apos;,&apos;_2020&apos;,&apos;2008&apos;)
+</code></pre>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx4ycq9vhj30ci03mdfx.jpg" alt="image-20200215155118023"></p>
+<pre><code class="lang-sql"><span class="hljs-keyword">select</span> <span class="hljs-keyword">trim</span>(<span class="hljs-string">&apos; $ beijing2008 $  &apos;</span>)
+</code></pre>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx4zo2hv5j308k03m0ss.jpg" alt="image-20200215155234066"></p>
+<pre><code class="lang-mysql">select substring(&apos;beijng2008&apos;,8,4),substring(&apos;beijng2008&apos;,1,7)
+</code></pre>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx51r04eej30ie03eq32.jpg" alt="image-20200215155434084"></p>
+<h4 id="&#x6570;&#x503C;&#x51FD;&#x6570;">&#x6570;&#x503C;&#x51FD;&#x6570;</h4>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx53f5rmcj312e0dm11a.jpg" alt="image-20200215155610196"></p>
+<pre><code class="lang-mysql">select ABS(-0.8), ABS(0.8)
+</code></pre>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx54xbxo9j30pa06mmxa.jpg" alt="Screenshot 2020-02-15 at 15.57.21"></p>
+<pre><code class="lang-mysql">SELECT CEIL(-0.8),CEIL(0.8)
+</code></pre>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx5ff6s3mj30pc06oglo.jpg" alt="image-20200215160742157"></p>
+<pre><code class="lang-mysql">SELECT FLOOR(-0.8),FLOOR(0.8)
+</code></pre>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx5gkpm8hj30p206cwek.jpg" alt="image-20200215160848892"></p>
+<pre><code class="lang-mysql">SELECT MOD(15,10),MOD(1,11),MOD(NULL,10);
+</code></pre>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx5i5imwuj30p806gmxa.jpg" alt="image-20200215161020005"></p>
+<pre><code class="lang-mysql">SELECT ceil(100*rand()),ceil(100*rand());
+</code></pre>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx5jnu6oej30pk06mglq.jpg" alt="image-20200215161146843"></p>
+<pre><code class="lang-mysql">select round(1.1),round(1.1,2),round(1.0,3);
+</code></pre>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx5m4v17hj30pe06odfx.jpg" alt="image-20200215161408673"></p>
+<pre><code class="lang-mysql">select round(1.235,2),truncate(1.235,2)
+</code></pre>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx5n4hbf1j30pa06k3yn.jpg" alt="image-20200215161506574"></p>
+<h4 id="&#x6D41;&#x7A0B;&#x51FD;&#x6570;">&#x6D41;&#x7A0B;&#x51FD;&#x6570;</h4>
+<p>&#x6D41;&#x7A0B;&#x51FD;&#x6570;&#x7528;&#x6765;&#x63D0;&#x9AD8;&#x8BED;&#x53E5;&#x6548;&#x7387;</p>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx62ai1phj311m09kahi.jpg" alt="image-20200215162940961"></p>
+<pre><code class="lang-mysql">CREATE table salary(userid int, salary decimal(9,2))
+INSERT INTO salary VALUES(1,1000),(2,2000),(3,3000),(4,4000),(5,null)
+SELECT * FROM salary
+</code></pre>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx6kpbyl4j30po06mglt.jpg" alt="image-20200215164722576"></p>
+<pre><code class="lang-mysql">select if(salary&gt;2000,&apos;high&apos;,&apos;low&apos;) from salary;
+</code></pre>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx6k5lwwqj30pm06st8x.jpg" alt="image-20200215164651256"></p>
+<pre><code class="lang-mysql">select ifnull(salary,0) from salary;
+</code></pre>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx6qsrwksj30pa06ojrk.jpg" alt="image-20200215165312715"></p>
+<pre><code class="lang-mysql">select case when salary&lt;=2000 then &apos;low&apos; else &apos;high&apos; end from salary;
+</code></pre>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx6uyuj4jj30qs06qwer.jpg" alt="image-20200215165714256"></p>
+<h4 id="&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x51FD;&#x6570;">&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x51FD;&#x6570;</h4>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx5oxe6tzj313u0mmh08.jpg" alt="image-20200215161649576"></p>
+<h4 id="&#x5176;&#x4ED6;&#x5E38;&#x7528;&#x51FD;&#x6570;">&#x5176;&#x4ED6;&#x5E38;&#x7528;&#x51FD;&#x6570;</h4>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbx6yndqz9j31220dcmzb.jpg" alt="image-20200215161907547"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="MySQL支持的数据类型.html" class="navigation navigation-prev " aria-label="Previous page: MySQL支持的数据类型">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="2020-2-16-Mysql存储引擎、数据类型和字符集.html" class="navigation navigation-next " aria-label="Next page: Mysql存储引擎、数据类型和字符集">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"MySQL中的运算符、常用函数","level":"2.1.4","depth":2,"next":{"title":"Mysql存储引擎、数据类型和字符集","level":"2.1.5","depth":2,"path":"chapter3/2020-2-16-Mysql存储引擎、数据类型和字符集.md","ref":"chapter3/2020-2-16-Mysql存储引擎、数据类型和字符集.md","articles":[]},"previous":{"title":"MySQL支持的数据类型","level":"2.1.3","depth":2,"path":"chapter3/MySQL支持的数据类型.md","ref":"chapter3/MySQL支持的数据类型.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter3/2020-2-15-MySQL中的运算符、常用函数.md","mtime":"2020-02-15T09:01:10.943Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-07T11:04:47.265Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,941 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Prototype模式 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../" />
+    
+    
+    <link rel="prev" href="2020-2-11-Singleton模式.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <span>
+            
+                    
+                    Java基础
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Java虚拟机
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    实际项目
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    计算机网络
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../framework.html">
+            
+                <a href="../framework.html">
+            
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter4/2020-2-13-创建SpringMVC 程序.html">
+            
+                <a href="../chapter4/2020-2-13-创建SpringMVC 程序.html">
+            
+                    
+                    创建SpringMVC 程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter4/2020-2-13-SpringMVC开发步骤和运行原理.html">
+            
+                <a href="../chapter4/2020-2-13-SpringMVC开发步骤和运行原理.html">
+            
+                    
+                    SpringMVC开发步骤和运行原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chapter4/2020-2-1-JSTL学习总结.html">
+            
+                <a href="../chapter4/2020-2-1-JSTL学习总结.html">
+            
+                    
+                    JSTL学习总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../chapter4/2020-2-6-Mybatis缓存.html">
+            
+                <a href="../chapter4/2020-2-6-Mybatis缓存.html">
+            
+                    
+                    Mybatis缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../chapter4/2020-2-8-Spring框架IOC.html">
+            
+                <a href="../chapter4/2020-2-8-Spring框架IOC.html">
+            
+                    
+                    Spring 框架IOC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../chapter4/2020-2-7-java反射技术.html">
+            
+                <a href="../chapter4/2020-2-7-java反射技术.html">
+            
+                    
+                    Java反射技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../DatabaseChapter3.html">
+            
+                <a href="../DatabaseChapter3.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../chapter3/MySQL安装配置.html">
+            
+                <a href="../chapter3/MySQL安装配置.html">
+            
+                    
+                    MySQL安装配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../chapter3/2020-2-12-SQL基础.html">
+            
+                <a href="../chapter3/2020-2-12-SQL基础.html">
+            
+                    
+                    SQL基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../chapter3/MySQL支持的数据类型.html">
+            
+                <a href="../chapter3/MySQL支持的数据类型.html">
+            
+                    
+                    MySQL支持的数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../chapter3/2020-2-15-MySQL中的运算符、常用函数.html">
+            
+                <a href="../chapter3/2020-2-15-MySQL中的运算符、常用函数.html">
+            
+                    
+                    MySQL中的运算符、常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../chapter3/2020-2-16-Mysql存储引擎、数据类型和字符集.html">
+            
+                <a href="../chapter3/2020-2-16-Mysql存储引擎、数据类型和字符集.html">
+            
+                    
+                    Mysql存储引擎、数据类型和字符集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../chapter3/2020-2-18-MySQL体系结构和存储引擎.html">
+            
+                <a href="../chapter3/2020-2-18-MySQL体系结构和存储引擎.html">
+            
+                    
+                    MySQL体系结构和存储引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../DesignModelChapter2.html">
+            
+                <a href="../DesignModelChapter2.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="设计模式试题.html">
+            
+                <a href="设计模式试题.html">
+            
+                    
+                    设计模式试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="2020-2-10-Java设计模式总结Iterator模式.html">
+            
+                <a href="2020-2-10-Java设计模式总结Iterator模式.html">
+            
+                    
+                    Iterator模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="2020-2-10-Adapter适配器模式.html">
+            
+                <a href="2020-2-10-Adapter适配器模式.html">
+            
+                    
+                    Adapter适配器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="2020-2-11-Template method模式.html">
+            
+                <a href="2020-2-11-Template method模式.html">
+            
+                    
+                    Template method模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="2020-2-11-Factory Method模式.html">
+            
+                <a href="2020-2-11-Factory Method模式.html">
+            
+                    
+                    Factory Method模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="2020-2-11-Singleton模式.html">
+            
+                <a href="2020-2-11-Singleton模式.html">
+            
+                    
+                    Singleton模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2.7" data-path="2020-2-12-Prototype模式.html">
+            
+                <a href="2020-2-12-Prototype模式.html">
+            
+                    
+                    Prototype模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    算法与数据结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../chapter1/2019-12-14-Two Sum.html">
+            
+                <a href="../chapter1/2019-12-14-Two Sum.html">
+            
+                    
+                    1.Two Sum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../chapter1/2019-12-14-Reverse Integer.html">
+            
+                <a href="../chapter1/2019-12-14-Reverse Integer.html">
+            
+                    
+                    7.Reverse Integer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../chapter1/2019-12-16-Palindrome Number.html">
+            
+                <a href="../chapter1/2019-12-16-Palindrome Number.html">
+            
+                    
+                    9.Palindrome Number
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" >
+            
+                <span>
+            
+                    
+                    13.Roman to Integer
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="../chapter1/2019-12-18-Longest Common Prefix.html">
+            
+                <a href="../chapter1/2019-12-18-Longest Common Prefix.html">
+            
+                    
+                    14.Longest Common Prefix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="../chapter1/2019-12-23-Leetcode练习题21. Merge Two Sorted Lists.md">
+            
+                <span>
+            
+                    
+                    21.Merge Two Sorted Lists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" >
+            
+                <span>
+            
+                    
+                    26.Remove Duplicates from Sorted Array
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.8" data-path="../chapter1/2019-12-15-Remove Element.html">
+            
+                <a href="../chapter1/2019-12-15-Remove Element.html">
+            
+                    
+                    27.Remove Element
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.9" data-path="../chapter1/2020-1-1-Implement strStr.html">
+            
+                <a href="../chapter1/2020-1-1-Implement strStr.html">
+            
+                    
+                    28.Implement strStr()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.10" data-path="../chapter1/2019-12-19-Search Insert Position.html">
+            
+                <a href="../chapter1/2019-12-19-Search Insert Position.html">
+            
+                    
+                    35.Search Insert Position
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.11" data-path="../chapter1/2019-12-20-Length of Last Word.html">
+            
+                <a href="../chapter1/2019-12-20-Length of Last Word.html">
+            
+                    
+                    58.Length of Last Word
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.12" data-path="../chapter1/2019-12-28-Delete Node in a Linked List.html">
+            
+                <a href="../chapter1/2019-12-28-Delete Node in a Linked List.html">
+            
+                    
+                    237.Delete Node in a Linked List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.13" >
+            
+                <span>
+            
+                    
+                    704. Binary Search
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Prototype模式</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="prototype&#x6A21;&#x5F0F;">Prototype&#x6A21;&#x5F0F;</h3>
+<ul>
+<li><p>Prototype(&#x539F;&#x578B;)</p>
+<p>&#x8D1F;&#x8D23;&#x5B9A;&#x4E49;&#x7528;&#x4E8E;&#x590D;&#x5236;&#x73B0;&#x6709;&#x5B9E;&#x4F8B;&#x6765;&#x751F;&#x6210;&#x65B0;&#x5B9E;&#x4F8B;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+</li>
+<li><p>ConcretePrototype(&#x5177;&#x4F53;&#x7684;&#x539F;&#x578B;)</p>
+<p>ConcreteProtype&#x89D2;&#x8272;&#x8D1F;&#x8D23;&#x5B9E;&#x73B0;&#x590D;&#x5236;&#x73B0;&#x6709;&#x5B9E;&#x4F8B;&#x5E76;&#x751F;&#x6210;&#x65B0;&#x5B9E;&#x4F8B;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x5728;&#x5B9E;&#x4F8B;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x7531;MessageBox&#x7C7B;&#x548C;UnderlinePen&#x7C7B;&#x626E;&#x6F14;&#x6B64;&#x89D2;&#x8272;&#x3002;</p>
+</li>
+<li><p>Client(&#x4F7F;&#x7528;&#x8005;)</p>
+</li>
+</ul>
+<p>  &#x7C7B;&#x548C;&#x63A5;&#x53E3;&#x7684;&#x4E00;&#x89C8;&#x8868;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5305;</th>
+<th>&#x540D;&#x5B57;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>framework</td>
+<td>Product</td>
+<td>&#x58F0;&#x660E;&#x4E86;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;use&#x548C;createClone&#x7684;&#x63A5;&#x53E3;</td>
+</tr>
+<tr>
+<td>framework</td>
+<td>Manager</td>
+<td>&#x8C03;&#x7528;createClone&#x65B9;&#x6CD5;&#x590D;&#x5236;&#x5B9E;&#x4F8B;&#x7684;&#x7C7B;</td>
+</tr>
+<tr>
+<td>&#x65E0;&#x540D;</td>
+<td>MessageBox</td>
+<td>&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x653E;&#x5165;&#x65B9;&#x6846;&#x4E2D;&#x5E76;&#x4F7F;&#x5176;&#x663E;&#x793A;&#x51FA;&#x6765;&#x7684;&#x7C7B;&#x3002;&#x5B9E;&#x73B0;&#x4E86;user&#x65B9;&#x6CD5;&#x548C;createClone&#x65B9;&#x6CD5;</td>
+</tr>
+<tr>
+<td>&#x65E0;&#x540D;</td>
+<td>UnderlinePen</td>
+<td>&#x7ED9;&#x5B57;&#x7B26;&#x4E32;&#x52A0;&#x4E0A;&#x4E0B;&#x5212;&#x7EBF;&#x5E76;&#x4F7F;&#x5176;&#x663E;&#x793A;&#x51FA;&#x6765;&#x7684;&#x7C7B;&#x3002;&#x5B9E;&#x73B0;&#x4E86;user&#x65B9;&#x6CD5;&#x548C;createClone&#x65B9;&#x6CD5;</td>
+</tr>
+<tr>
+<td>&#x65E0;&#x540D;</td>
+<td>Main</td>
+<td>&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;</td>
+</tr>
+</tbody>
+</table>
+<p>  <img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbsw1cvl93j30qu0ho0ty.jpg" alt="image-20200211234029865"></p>
+<p>Main.java</p>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> framework.Manager;
+<span class="hljs-keyword">import</span> framework.Product;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        Manager manager = <span class="hljs-keyword">new</span> Manager();
+        UnderlinePen upen = <span class="hljs-keyword">new</span> UnderlinePen(<span class="hljs-string">&quot;~&quot;</span>);
+        UnderlinePen upen2 = <span class="hljs-keyword">new</span> UnderlinePen(<span class="hljs-string">&quot;*&quot;</span>);
+        manager.register(<span class="hljs-string">&quot;strong message&quot;</span>,upen);
+        manager.register(<span class="hljs-string">&quot;waring box&quot;</span>,upen2);
+        Product p1 = manager.create(<span class="hljs-string">&quot;strong message&quot;</span>);
+        Product p2 = manager.create(<span class="hljs-string">&quot;waring box&quot;</span>);
+        p1.use(<span class="hljs-string">&quot;Hello,world&quot;</span>);
+        p2.use(<span class="hljs-string">&quot;waring box&quot;</span>);
+    }
+}
+</code></pre>
+<blockquote>
+<p> Framework</p>
+</blockquote>
+<p>Manager.java</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> framework;
+
+<span class="hljs-keyword">import</span> java.util.HashMap;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Manager</span> </span>{
+    <span class="hljs-keyword">private</span> HashMap showcase = <span class="hljs-keyword">new</span> HashMap&lt;&gt;();
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">register</span><span class="hljs-params">(String name,Product proto)</span></span>{
+        showcase.put(name,proto);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Product <span class="hljs-title">create</span><span class="hljs-params">(String protoname)</span></span>{
+        Product p = (Product)showcase.get(protoname);
+        <span class="hljs-keyword">return</span> p.createClone();
+
+    }
+}
+</code></pre>
+<p>Product.java</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> framework;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Product</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Cloneable</span></span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">void</span> <span class="hljs-title">use</span><span class="hljs-params">(String s)</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> Product <span class="hljs-title">createClone</span><span class="hljs-params">()</span></span>;
+}
+</code></pre>
+<p>MessageBox.java</p>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> framework.Product;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MessageBox</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Product</span> </span>{
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">char</span> decochar;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MessageBox</span><span class="hljs-params">(<span class="hljs-keyword">char</span> decochar)</span> </span>{
+        <span class="hljs-keyword">this</span>.decochar = decochar;
+    }
+
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">use</span><span class="hljs-params">(String s)</span> </span>{
+        <span class="hljs-keyword">int</span> length = s.length();
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; length ; i++) {
+            System.out.println(decochar);
+        }
+
+        System.out.println(<span class="hljs-string">&quot;&quot;</span>);
+        System.out.println(decochar+<span class="hljs-string">&quot; &quot;</span>+s+<span class="hljs-string">&quot; &quot;</span>+decochar );
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; length + <span class="hljs-number">4</span>; i++) {
+            System.out.print(decochar);
+        }
+        System.out.println(<span class="hljs-string">&quot;&quot;</span>);
+    }
+
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Product <span class="hljs-title">createClone</span><span class="hljs-params">()</span> </span>{
+        Product p = <span class="hljs-keyword">null</span>;
+
+        <span class="hljs-keyword">try</span> {
+            p = (Product)clone();
+        } <span class="hljs-keyword">catch</span> (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+        <span class="hljs-keyword">return</span> p;
+
+
+    }
+}
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> framework.Product;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UnderlinePen</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Product</span> </span>{
+    String ulchar;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">UnderlinePen</span><span class="hljs-params">(String ulchar)</span> </span>{
+        <span class="hljs-keyword">this</span>.ulchar = ulchar;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">use</span><span class="hljs-params">(String s)</span> </span>{
+        <span class="hljs-keyword">int</span> length = s.length();
+        System.out.println(<span class="hljs-string">&quot;\&quot;&quot;</span>+s+<span class="hljs-string">&quot;\&quot;&quot;</span>);
+        System.out.print(<span class="hljs-string">&quot; &quot;</span>);
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; length; i++) {
+            System.out.print(ulchar);
+        }
+        System.out.println(<span class="hljs-string">&quot;&quot;</span>);
+
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Product <span class="hljs-title">createClone</span><span class="hljs-params">()</span> </span>{
+        Product p = <span class="hljs-keyword">null</span>;
+
+        <span class="hljs-keyword">try</span> {
+            p = (Product)clone();
+        } <span class="hljs-keyword">catch</span> (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+        <span class="hljs-keyword">return</span> p;
+
+    }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2020-2-11-Singleton模式.html" class="navigation navigation-prev " aria-label="Previous page: Singleton模式">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../" class="navigation navigation-next " aria-label="Next page: 算法与数据结构">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Prototype模式","level":"2.2.7","depth":2,"next":{"title":"算法与数据结构","level":"2.3","depth":1,"path":"README.md","ref":"README.md","articles":[{"title":"1.Two Sum","level":"2.3.1","depth":2,"path":"chapter1/2019-12-14-Two Sum.md","ref":"chapter1/2019-12-14-Two Sum.md","articles":[]},{"title":"7.Reverse Integer","level":"2.3.2","depth":2,"path":"chapter1/2019-12-14-Reverse Integer.md","ref":"chapter1/2019-12-14-Reverse Integer.md","articles":[]},{"title":"9.Palindrome Number","level":"2.3.3","depth":2,"path":"chapter1/2019-12-16-Palindrome Number.md","ref":"chapter1/2019-12-16-Palindrome Number.md","articles":[]},{"title":"13.Roman to Integer","level":"2.3.4","depth":2,"ref":"","articles":[]},{"title":"14.Longest Common Prefix","level":"2.3.5","depth":2,"path":"chapter1/2019-12-18-Longest Common Prefix.md","ref":"chapter1/2019-12-18-Longest Common Prefix.md","articles":[]},{"title":"21.Merge Two Sorted Lists","level":"2.3.6","depth":2,"path":"chapter1/2019-12-23-Leetcode练习题21. Merge Two Sorted Lists.md","ref":"chapter1/2019-12-23-Leetcode练习题21. Merge Two Sorted Lists.md","articles":[]},{"title":"26.Remove Duplicates from Sorted Array","level":"2.3.7","depth":2,"ref":"","articles":[]},{"title":"27.Remove Element","level":"2.3.8","depth":2,"path":"chapter1/2019-12-15-Remove Element.md","ref":"chapter1/2019-12-15-Remove Element.md","articles":[]},{"title":"28.Implement strStr()","level":"2.3.9","depth":2,"path":"chapter1/2020-1-1-Implement strStr.md","ref":"chapter1/2020-1-1-Implement strStr.md","articles":[]},{"title":"35.Search Insert Position","level":"2.3.10","depth":2,"path":"chapter1/2019-12-19-Search Insert Position.md","ref":"chapter1/2019-12-19-Search Insert Position.md","articles":[]},{"title":"58.Length of Last Word","level":"2.3.11","depth":2,"path":"chapter1/2019-12-20-Length of Last Word.md","ref":"chapter1/2019-12-20-Length of Last Word.md","articles":[]},{"title":"237.Delete Node in a Linked List","level":"2.3.12","depth":2,"path":"chapter1/2019-12-28-Delete Node in a Linked List.md","ref":"chapter1/2019-12-28-Delete Node in a Linked List.md","articles":[]},{"title":"704. Binary Search","level":"2.3.13","depth":2,"ref":"","articles":[]}]},"previous":{"title":"Singleton模式","level":"2.2.6","depth":2,"path":"chapter2/2020-2-11-Singleton模式.md","ref":"chapter2/2020-2-11-Singleton模式.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter2/2020-2-12-Prototype模式.md","mtime":"2020-02-11T16:38:58.830Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-07T11:04:47.265Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

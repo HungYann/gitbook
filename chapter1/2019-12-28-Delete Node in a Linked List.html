@@ -1,0 +1,887 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>237.Delete Node in a Linked List · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="2019-12-20-Length of Last Word.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <span>
+            
+                    
+                    Java基础
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Java虚拟机
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    实际项目
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    计算机网络
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../framework.html">
+            
+                <a href="../framework.html">
+            
+                    
+                    常用框架
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter4/2020-2-13-创建SpringMVC 程序.html">
+            
+                <a href="../chapter4/2020-2-13-创建SpringMVC 程序.html">
+            
+                    
+                    创建SpringMVC 程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter4/2020-2-13-SpringMVC开发步骤和运行原理.html">
+            
+                <a href="../chapter4/2020-2-13-SpringMVC开发步骤和运行原理.html">
+            
+                    
+                    SpringMVC开发步骤和运行原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chapter4/2020-2-1-JSTL学习总结.html">
+            
+                <a href="../chapter4/2020-2-1-JSTL学习总结.html">
+            
+                    
+                    JSTL学习总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../chapter4/2020-2-6-Mybatis缓存.html">
+            
+                <a href="../chapter4/2020-2-6-Mybatis缓存.html">
+            
+                    
+                    Mybatis缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../chapter4/2020-2-8-Spring框架IOC.html">
+            
+                <a href="../chapter4/2020-2-8-Spring框架IOC.html">
+            
+                    
+                    Spring 框架IOC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../chapter4/2020-2-7-java反射技术.html">
+            
+                <a href="../chapter4/2020-2-7-java反射技术.html">
+            
+                    
+                    Java反射技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../DatabaseChapter3.html">
+            
+                <a href="../DatabaseChapter3.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../chapter3/MySQL安装配置.html">
+            
+                <a href="../chapter3/MySQL安装配置.html">
+            
+                    
+                    MySQL安装配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../chapter3/2020-2-12-SQL基础.html">
+            
+                <a href="../chapter3/2020-2-12-SQL基础.html">
+            
+                    
+                    SQL基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../chapter3/MySQL支持的数据类型.html">
+            
+                <a href="../chapter3/MySQL支持的数据类型.html">
+            
+                    
+                    MySQL支持的数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../chapter3/2020-2-15-MySQL中的运算符、常用函数.html">
+            
+                <a href="../chapter3/2020-2-15-MySQL中的运算符、常用函数.html">
+            
+                    
+                    MySQL中的运算符、常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../chapter3/2020-2-16-Mysql存储引擎、数据类型和字符集.html">
+            
+                <a href="../chapter3/2020-2-16-Mysql存储引擎、数据类型和字符集.html">
+            
+                    
+                    Mysql存储引擎、数据类型和字符集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../chapter3/2020-2-18-MySQL体系结构和存储引擎.html">
+            
+                <a href="../chapter3/2020-2-18-MySQL体系结构和存储引擎.html">
+            
+                    
+                    MySQL体系结构和存储引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../DesignModelChapter2.html">
+            
+                <a href="../DesignModelChapter2.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../chapter2/设计模式试题.html">
+            
+                <a href="../chapter2/设计模式试题.html">
+            
+                    
+                    设计模式试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../chapter2/2020-2-10-Java设计模式总结Iterator模式.html">
+            
+                <a href="../chapter2/2020-2-10-Java设计模式总结Iterator模式.html">
+            
+                    
+                    Iterator模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../chapter2/2020-2-10-Adapter适配器模式.html">
+            
+                <a href="../chapter2/2020-2-10-Adapter适配器模式.html">
+            
+                    
+                    Adapter适配器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../chapter2/2020-2-11-Template method模式.html">
+            
+                <a href="../chapter2/2020-2-11-Template method模式.html">
+            
+                    
+                    Template method模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../chapter2/2020-2-11-Factory Method模式.html">
+            
+                <a href="../chapter2/2020-2-11-Factory Method模式.html">
+            
+                    
+                    Factory Method模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../chapter2/2020-2-11-Singleton模式.html">
+            
+                <a href="../chapter2/2020-2-11-Singleton模式.html">
+            
+                    
+                    Singleton模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../chapter2/2020-2-12-Prototype模式.html">
+            
+                <a href="../chapter2/2020-2-12-Prototype模式.html">
+            
+                    
+                    Prototype模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    算法与数据结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="2019-12-14-Two Sum.html">
+            
+                <a href="2019-12-14-Two Sum.html">
+            
+                    
+                    1.Two Sum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="2019-12-14-Reverse Integer.html">
+            
+                <a href="2019-12-14-Reverse Integer.html">
+            
+                    
+                    7.Reverse Integer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="2019-12-16-Palindrome Number.html">
+            
+                <a href="2019-12-16-Palindrome Number.html">
+            
+                    
+                    9.Palindrome Number
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" >
+            
+                <span>
+            
+                    
+                    13.Roman to Integer
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="2019-12-18-Longest Common Prefix.html">
+            
+                <a href="2019-12-18-Longest Common Prefix.html">
+            
+                    
+                    14.Longest Common Prefix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="2019-12-23-Leetcode练习题21. Merge Two Sorted Lists.md">
+            
+                <span>
+            
+                    
+                    21.Merge Two Sorted Lists
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" >
+            
+                <span>
+            
+                    
+                    26.Remove Duplicates from Sorted Array
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.8" data-path="2019-12-15-Remove Element.html">
+            
+                <a href="2019-12-15-Remove Element.html">
+            
+                    
+                    27.Remove Element
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.9" data-path="2020-1-1-Implement strStr.html">
+            
+                <a href="2020-1-1-Implement strStr.html">
+            
+                    
+                    28.Implement strStr()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.10" data-path="2019-12-19-Search Insert Position.html">
+            
+                <a href="2019-12-19-Search Insert Position.html">
+            
+                    
+                    35.Search Insert Position
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.11" data-path="2019-12-20-Length of Last Word.html">
+            
+                <a href="2019-12-20-Length of Last Word.html">
+            
+                    
+                    58.Length of Last Word
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3.12" data-path="2019-12-28-Delete Node in a Linked List.html">
+            
+                <a href="2019-12-28-Delete Node in a Linked List.html">
+            
+                    
+                    237.Delete Node in a Linked List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.13" >
+            
+                <span>
+            
+                    
+                    704. Binary Search
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >237.Delete Node in a Linked List</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x5220;&#x9664;&#x5355;&#x5411;&#x94FE;&#x8868;&#x4E2D;&#x7684;&#x67D0;&#x4E2A;&#x8282;&#x70B9;">&#x5220;&#x9664;&#x5355;&#x5411;&#x94FE;&#x8868;&#x4E2D;&#x7684;&#x67D0;&#x4E2A;&#x8282;&#x70B9;</h2>
+<p>&#x94FE;&#x8868;&#x7684;&#x8282;&#x70B9;&#x5220;&#x9664;</p>
+<p>&#x5728;&#x5220;&#x9664;&#x94FE;&#x8868;&#x7684;&#x8282;&#x70B9;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li><p>1.&#x627E;&#x5230;&#x88AB;&#x5220;&#x9664;&#x8282;&#x70B9;&#x7684;&#x524D;&#x9762;&#x4E00;&#x4E2A;&#x8282;&#x70B9;</p>
+</li>
+<li><p>2.&#x5C06;&#x524D;&#x9762;&#x8282;&#x70B9;&#x7684;next&#x8282;&#x70B9;&#x6539;&#x6210;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;</p>
+</li>
+<li><p>3.&#x5C06;&#x88AB;&#x5220;&#x9664;&#x8282;&#x70B9;&#x7684;&#x5185;&#x5B58;&#x91CA;&#x653E;</p>
+</li>
+</ul>
+<p><img src="https://tva1.sinaimg.cn/large/006tNbRwgy1gachsh100oj30xe0a4gmj.jpg" alt=""></p>
+<pre><code class="lang-{java}">
+public class deleteNode
+{
+
+    Node head;
+
+    class Node
+    {
+        int data;
+        Node next;
+        Node(int d)
+        {
+            data = d;
+            next = null;
+        }
+    }
+
+
+
+    void deleteNode(int key)
+    {
+        // Store head node
+        Node temp = head, prev = null;
+
+        // If head node itself holds the key to be deleted
+        if (temp != null &amp;&amp; temp.data == key)
+        {
+            head = temp.next; // Changed head
+            return;
+        }
+
+        // Search for the key to be deleted, keep track of the
+        // previous node as we need to change temp.next
+        while (temp != null &amp;&amp; temp.data != key)
+        {
+            prev = temp;
+            temp = temp.next;
+        }
+
+        // If key was not present in linked list
+        if (temp == null) return;
+
+        // Unlink the node from linked list
+        prev.next = temp.next;
+    }
+
+
+
+
+    public void push(int new_data)
+    {
+        Node new_node = new Node(new_data);
+        new_node.next =  head;
+        head = new_node;
+    }
+
+
+    public void printList()
+    {
+        Node tnode = head;
+
+        while (tnode!=null)
+        {
+            System.out.println(tnode.data);
+            tnode = tnode.next;
+
+        }
+    }
+
+    public static void main(String[] args)
+    {
+        deleteNode llist = new  deleteNode();
+
+        llist.push(7);
+        llist.push(1);
+        llist.push(3);
+        llist.push(2);
+
+        System.out.println(&quot;\nCreated Linked list is:&quot;);
+        llist.printList();
+
+        llist.deleteNode(1); // Delete node at position 4
+
+        System.out.println(&quot;\nLinked List after Deletion at position 4:&quot;);
+        llist.printList();
+    }
+
+
+
+}
+</code></pre>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x6765;&#x8003;&#x8651;&#x4E00;&#x9053;leetcode&#x9898;&#xFF1A;</p>
+<p><strong>237. Delete Node in a Linked List</strong></p>
+<p>Write a function to delete a node (except the tail) in a singly linked list, given only access to that node.</p>
+<p><strong>Given linked list -- head = [4,5,1,9]</strong>, which looks like following:</p>
+<p><strong>Example 1:</strong></p>
+<p>Input: head = [4,5,1,9], node = 5
+Output: [4,1,9]
+Explanation: You are given the second node with value 5, the linked list should become 4 -&gt; 1 -&gt; 9 after calling your function.</p>
+<p><strong>Example 2:</strong></p>
+<p>Input: head = [4,5,1,9], node = 1
+Output: [4,5,9]
+Explanation: You are given the third node with value 1, the linked list should become 4 -&gt; 5 -&gt; 9 after calling your function.</p>
+<pre><code class="lang-{}">class Solution {
+    public void deleteNode(ListNode node) {
+        node.val = node.next.val;
+        node.next = node.next.next;
+    }
+}
+</code></pre>
+<p>&#x5728;&#x8FD9;&#x4E00;&#x9898;&#x4E2D;&#xFF0C;&#x6CA1;&#x6709;&#x4F20;&#x5165;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x4E0A;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x3002;&#x7531;&#x4E8E;&#x4E0A;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x77E5;&#x9053;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x5C31;&#x662F;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x3002;&#x56E0;&#x6B64;&#x53EA;&#x8981;&#x6211;&#x4EEC;&#x5C06;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x6240;&#x6709;&#x4FE1;&#x606F;&#x66FF;&#x6362;&#x6210;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x5C31;&#x53D8;&#x76F8;&#x5B8C;&#x6210;&#x4E86;&#x8282;&#x70B9;&#x7684;&#x5220;&#x9664;&#x3002;</p>
+<p><strong>References:</strong></p>
+<p><a href="https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/" target="_blank">deletion linked list</a></p>
+<p><a href="https://blog.csdn.net/cchengone/article/details/52973877" target="_blank">&#x5220;&#x9664;&#x5355;&#x5411;&#x94FE;&#x8868;&#x4E2D;&#x7684;&#x67D0;&#x4E2A;&#x8282;&#x70B9;</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2019-12-20-Length of Last Word.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 58.Length of Last Word">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"237.Delete Node in a Linked List","level":"2.3.12","depth":2,"next":{"title":"704. Binary Search","level":"2.3.13","depth":2,"ref":"","articles":[]},"previous":{"title":"58.Length of Last Word","level":"2.3.11","depth":2,"path":"chapter1/2019-12-20-Length of Last Word.md","ref":"chapter1/2019-12-20-Length of Last Word.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/2019-12-28-Delete Node in a Linked List.md","mtime":"2019-12-28T08:46:55.614Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-07T11:04:47.265Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
