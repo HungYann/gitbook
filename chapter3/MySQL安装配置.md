@@ -1,11 +1,113 @@
-介绍与学习
+### MySQL目录结构和Linux配置
+
+MySQL目录结构
+
+- bin目录，存储可执行文件
+- data目录，存储数据文件
+- docs文档
+- include目录，存储包含的头文件
+- lib目录，存储库文件
+- share目录，错误消息和字符集文件
+
+mysql配置文件：
+
+
+
+**my.ini**
+
+```
+
+client
+
+port=3306
+
+mysql
+
+default-character-set=utf-8
+
+```
+
+mysqld:
+
+
+mysql服务器端的配置
+
+```
+character-set-server=utf8
+```
+
+
+
+
+#### 在Linux平台下安装MySQL
+
+##### 安装
+
+
+三种方式：RPM包、二进制包、源码包
+
+RPM是Redhat Package Manage的缩写
+
+安装Server包
+
+```{} 
+su
+
+rpm -ivh MySQL-server-community-5.0.45-0.rhel3.i386.rpm
+```
+
+安装MySQL Client包
+
+
+```{}
+rpm -ivh MySQL-client-community-5.0.45-0.rhel3.i386.rpm
+
+```
+
+运行MySQL:
+
+```{}
+mysql -uroot -p
+```
+
+
+
+##### 配置
+
+查看MySQL服务状态：
+
+```{}
+netstat 
+```
+端口号: **3306**
+
+启动和关闭MySQL:
+
+如何MySQL是用RPM包安装的，则启动和关闭MySQL:
+
+```{}
+service mysql start 
+```
+
+
+```{}
+service mysql stop
+```
+
+
+
+
+
+### 介绍与学习
+
+
 
 Mysql的基本登录与退出，连接服务器，修改提示符和语法规范
 
 最后是操作数据库创建、删除、更改
 
 
-### Mysql登录与退出
+#### Mysql登录与退出
 
 
 启动mysql
@@ -29,12 +131,15 @@ mysql -V
 
 一些常见的登录参数：
 
-
 ![](https://tva1.sinaimg.cn/large/006tNbRwgy1gbkbfnorssj30ku0fkq5l.jpg)
+
+
 
 连接示例：
 
 ![](https://tva1.sinaimg.cn/large/006tNbRwgy1gbkbes5tezj30vi02kglv.jpg)
+
+
 
 mysql退出：
 
@@ -42,10 +147,11 @@ mysql退出：
 exit;
 quit;
 \q
-
 ```
 
-### 修改Mysql提示符
+
+
+#### 修改Mysql提示符
 
 
 连接客户端时通过参数指定：
@@ -66,7 +172,8 @@ Mysql提示符：
 ![](https://tva1.sinaimg.cn/large/006tNbRwgy1gbkbmhmyoxj315m09875n.jpg)
 
 
-### Mysql常用命令以及语法规范
+
+#### Mysql常用命令以及语法规范
 
 
 MySQL常用命令：
@@ -92,7 +199,7 @@ MySQL常用命令：
 
 
 
-### 操作数据库
+#### 操作数据库
 
 创建数据库的语法结构：
 
@@ -111,10 +218,6 @@ SHOW {DATABASES | SCHEMAS}
 ```{}
 ALTER DATABASE db_name [DEFAULT] CHARACTER SET [=] charset_name
 ```
-
-
-
-
 
 创建数据库
 
@@ -156,5 +259,4 @@ ALTER DATABASE t2 CHARACTER SET = utf-8;
 ```{}
 DROP DATABASE t1;
 ```
-
 
